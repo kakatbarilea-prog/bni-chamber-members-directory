@@ -567,7 +567,6 @@
 
 <!--start-->
 
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
 <main class="rs-dir">
@@ -627,10 +626,9 @@
             </button>
           </div>
 
-          <!-- Results meta (optional, but realistic) -->
+          <!-- Results meta -->
           <div class="rs-resultsMeta" aria-live="polite">
             <span id="rsResultsCount" class="rs-resultsCount">Showing 35 members</span>
-
           </div>
         </div>
 
@@ -640,7 +638,6 @@
             <i class="fa-solid fa-layer-group"></i> All
           </button>
 
-          <!-- realistic industries (you can rename anytime) -->
           <button class="rs-chip" type="button" data-filter="home">
             <i class="fa-solid fa-house"></i> Home Services
           </button>
@@ -687,135 +684,128 @@
 
       <div class="rs-dirGrid" id="rsDirGrid">
 
-        <!-- NOTE:
-             Each card includes data-category="" for industry filtering.
-             ALSO includes searchable text like name + company + optional keywords.
-        -->
-
         <!-- 1 -->
-<article class="rs-memberCard" data-category="home" data-search="Arik R. Sevy Sevys Electrical LLC electrician electrical central nj">
-  <img class="rs-headshot" alt="Arik R. Sevy"
-       src="https://drive.google.com/uc?export=view&id=1lvywtjJwnqDYwM_o-xgtVhoVtW47Pt1p">
-  <div class="rs-memberBody">
-    <div class="rs-memberName">Arik R. Sevy</div>
-    <div class="rs-memberBiz">Sevys Electrical LLC</div>
-    <div class="rs-memberActions">
-      <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-handshake"></i> Request a 1-to-1</a>
-      <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-paper-plane"></i> Share a referral</a>
-      <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
-    </div>
-  </div>
-</article>
+        <article class="rs-memberCard" data-category="home" data-search="Arik R. Sevy Sevys Electrical LLC electrician electrical central nj">
+          <img class="rs-headshot" alt="Arik R. Sevy"
+               src="https://drive.google.com/uc?export=view&id=1lvywtjJwnqDYwM_o-xgtVhoVtW47Pt1p">
+          <div class="rs-memberBody">
+            <div class="rs-memberName">Arik R. Sevy</div>
+            <div class="rs-memberBiz">Sevys Electrical LLC</div>
+            <div class="rs-memberActions">
+              <a class="rs-miniBtn rs-miniBtn--muted rs-req11Btn" href="#" data-member="Arik R. Sevy" data-biz="Sevys Electrical LLC"><i class="fa-solid fa-handshake"></i> Request a 1-to-1</a>
+              <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-paper-plane"></i> Share a referral</a>
+              <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
+            </div>
+          </div>
+        </article>
 
-<!-- 2 -->
-<article class="rs-memberCard" data-category="health" data-search="Bridgete Ervin-Furnari Senior Care Authority elder care senior care monmouth">
-  <img class="rs-headshot" alt="Bridgete Ervin-Furnari"
-       src="https://drive.google.com/uc?export=view&id=1FRUbs9BPDFjGiZxxGrKb3Kmww6gqv9iT">
-  <div class="rs-memberBody">
-    <div class="rs-memberName">Bridgete Ervin-Furnari</div>
-    <div class="rs-memberBiz">Senior Care Authority</div>
-    <div class="rs-memberActions">
-      <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-handshake"></i> Request a 1-to-1</a>
-      <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-paper-plane"></i> Share a referral</a>
-      <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
-    </div>
-  </div>
-</article>
+        <!-- 2 -->
+        <article class="rs-memberCard" data-category="health" data-search="Bridgete Ervin-Furnari Senior Care Authority elder care senior care monmouth">
+          <img class="rs-headshot" alt="Bridgete Ervin-Furnari"
+               src="https://drive.google.com/uc?export=view&id=1FRUbs9BPDFjGiZxxGrKb3Kmww6gqv9iT">
+          <div class="rs-memberBody">
+            <div class="rs-memberName">Bridgete Ervin-Furnari</div>
+            <div class="rs-memberBiz">Senior Care Authority</div>
+            <div class="rs-memberActions">
+              <a class="rs-miniBtn rs-miniBtn--muted rs-req11Btn" href="#" data-member="Bridgete Ervin-Furnari" data-biz="Senior Care Authority"><i class="fa-solid fa-handshake"></i> Request a 1-to-1</a>
+              <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-paper-plane"></i> Share a referral</a>
+              <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
+            </div>
+          </div>
+        </article>
 
-<!-- 3 -->
-<article class="rs-memberCard" data-category="business" data-search="Cary Zackman City Lifestyle marketing magazine media central nj">
-  <img class="rs-headshot" alt="Cary Zackman"
-       src="https://drive.google.com/uc?export=view&id=1a6g7mpN1ovFOe7ryhmhMT1xiPLL6e2qX">
-  <div class="rs-memberBody">
-    <div class="rs-memberName">Cary Zackman</div>
-    <div class="rs-memberBiz">City Lifestyle</div>
-    <div class="rs-memberActions">
-      <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-handshake"></i> Request a 1-to-1</a>
-      <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-paper-plane"></i> Share a referral</a>
-      <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
-    </div>
-  </div>
-</article>
+        <!-- 3 -->
+        <article class="rs-memberCard" data-category="business" data-search="Cary Zackman City Lifestyle marketing magazine media central nj">
+          <img class="rs-headshot" alt="Cary Zackman"
+               src="https://drive.google.com/uc?export=view&id=1a6g7mpN1ovFOe7ryhmhMT1xiPLL6e2qX">
+          <div class="rs-memberBody">
+            <div class="rs-memberName">Cary Zackman</div>
+            <div class="rs-memberBiz">City Lifestyle</div>
+            <div class="rs-memberActions">
+              <a class="rs-miniBtn rs-miniBtn--muted rs-req11Btn" href="#" data-member="Cary Zackman" data-biz="City Lifestyle"><i class="fa-solid fa-handshake"></i> Request a 1-to-1</a>
+              <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-paper-plane"></i> Share a referral</a>
+              <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
+            </div>
+          </div>
+        </article>
 
-<!-- 4 -->
-<article class="rs-memberCard" data-category="health" data-search="Craig Leavitt Coastal Chiropractic Center chiropractor wellness">
-  <img class="rs-headshot" alt="Craig Leavitt"
-       src="https://drive.google.com/uc?export=view&id=1-wFNyE8btkxxFtncH8X5HLYyQhkXyJc0">
-  <div class="rs-memberBody">
-    <div class="rs-memberName">Craig Leavitt</div>
-    <div class="rs-memberBiz">Coastal Chiropractic Center</div>
-    <div class="rs-memberActions">
-      <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-handshake"></i> Request a 1-to-1</a>
-      <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-paper-plane"></i> Share a referral</a>
-      <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
-    </div>
-  </div>
-</article>
+        <!-- 4 -->
+        <article class="rs-memberCard" data-category="health" data-search="Craig Leavitt Coastal Chiropractic Center chiropractor wellness">
+          <img class="rs-headshot" alt="Craig Leavitt"
+               src="https://drive.google.com/uc?export=view&id=1-wFNyE8btkxxFtncH8X5HLYyQhkXyJc0">
+          <div class="rs-memberBody">
+            <div class="rs-memberName">Craig Leavitt</div>
+            <div class="rs-memberBiz">Coastal Chiropractic Center</div>
+            <div class="rs-memberActions">
+              <a class="rs-miniBtn rs-miniBtn--muted rs-req11Btn" href="#" data-member="Craig Leavitt" data-biz="Coastal Chiropractic Center"><i class="fa-solid fa-handshake"></i> Request a 1-to-1</a>
+              <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-paper-plane"></i> Share a referral</a>
+              <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
+            </div>
+          </div>
+        </article>
 
-<!-- 5 -->
-<article class="rs-memberCard" data-category="home" data-search="Dean White Bee Gone Pest Control pest control exterminator nj">
-  <img class="rs-headshot" alt="Dean White"
-       src="https://drive.google.com/uc?export=view&id=1xY8W_y8eUeNy2b3_xoYg0u3c0cbH5u0C">
-  <div class="rs-memberBody">
-    <div class="rs-memberName">Dean White</div>
-    <div class="rs-memberBiz">Bee Gone Pest Control</div>
-    <div class="rs-memberActions">
-      <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-handshake"></i> Request a 1-to-1</a>
-      <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-paper-plane"></i> Share a referral</a>
-      <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
-    </div>
-  </div>
-</article>
+        <!-- 5 -->
+        <article class="rs-memberCard" data-category="home" data-search="Dean White Bee Gone Pest Control pest control exterminator nj">
+          <img class="rs-headshot" alt="Dean White"
+               src="https://drive.google.com/uc?export=view&id=1xY8W_y8eUeNy2b3_xoYg0u3c0cbH5u0C">
+          <div class="rs-memberBody">
+            <div class="rs-memberName">Dean White</div>
+            <div class="rs-memberBiz">Bee Gone Pest Control</div>
+            <div class="rs-memberActions">
+              <a class="rs-miniBtn rs-miniBtn--muted rs-req11Btn" href="#" data-member="Dean White" data-biz="Bee Gone Pest Control"><i class="fa-solid fa-handshake"></i> Request a 1-to-1</a>
+              <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-paper-plane"></i> Share a referral</a>
+              <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
+            </div>
+          </div>
+        </article>
 
-<!-- 6 -->
-<article class="rs-memberCard">
-  <img class="rs-headshot" alt="Danielle McManus"
-       src="https://drive.google.com/uc?export=view&id=1f8yOcWmY7VwOuk9GLmUQ3hQmZ9JzG4wK">
-  <div class="rs-memberBody">
-    <div class="rs-memberName">Danielle McManus</div>
-    <div class="rs-memberBiz">Chamber Connect</div>
-    <div class="rs-memberActions">
-      <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-handshake"></i> Request a 1-to-1</a>
-      <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-paper-plane"></i> Share a referral</a>
-      <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
-    </div>
-  </div>
-</article>
+        <!-- 6 -->
+        <article class="rs-memberCard">
+          <img class="rs-headshot" alt="Danielle McManus"
+               src="https://drive.google.com/uc?export=view&id=1f8yOcWmY7VwOuk9GLmUQ3hQmZ9JzG4wK">
+          <div class="rs-memberBody">
+            <div class="rs-memberName">Danielle McManus</div>
+            <div class="rs-memberBiz">Chamber Connect</div>
+            <div class="rs-memberActions">
+              <a class="rs-miniBtn rs-miniBtn--muted rs-req11Btn" href="#" data-member="Danielle McManus" data-biz="Chamber Connect"><i class="fa-solid fa-handshake"></i> Request a 1-to-1</a>
+              <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-paper-plane"></i> Share a referral</a>
+              <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
+            </div>
+          </div>
+        </article>
 
-<!-- 7 -->
-<article class="rs-memberCard">
-  <img class="rs-headshot" alt="Diana McInerney"
-       src="https://drive.google.com/uc?export=view&id=1Po2O4aCz9QvYp8PzGsE_sg8mKcqjv4x1">
-  <div class="rs-memberBody">
-    <div class="rs-memberName">Diana McInerney</div>
-    <div class="rs-memberBiz">Foley Inc.</div>
-    <div class="rs-memberActions">
-      <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-handshake"></i> Request a 1-to-1</a>
-      <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-paper-plane"></i> Share a referral</a>
-      <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
-    </div>
-  </div>
-</article>
+        <!-- 7 -->
+        <article class="rs-memberCard">
+          <img class="rs-headshot" alt="Diana McInerney"
+               src="https://drive.google.com/uc?export=view&id=1Po2O4aCz9QvYp8PzGsE_sg8mKcqjv4x1">
+          <div class="rs-memberBody">
+            <div class="rs-memberName">Diana McInerney</div>
+            <div class="rs-memberBiz">Foley Inc.</div>
+            <div class="rs-memberActions">
+              <a class="rs-miniBtn rs-miniBtn--muted rs-req11Btn" href="#" data-member="Diana McInerney" data-biz="Foley Inc."><i class="fa-solid fa-handshake"></i> Request a 1-to-1</a>
+              <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-paper-plane"></i> Share a referral</a>
+              <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
+            </div>
+          </div>
+        </article>
 
-<!-- 8 -->
-<article class="rs-memberCard">
-  <img class="rs-headshot" alt="Dylan Goldstein"
-       src="https://drive.google.com/uc?export=view&id=1oX7j2B8m7uQ8G4j8a3qv4Qw2G1zj1H9G">
-  <div class="rs-memberBody">
-    <div class="rs-memberName">Dylan Goldstein</div>
-    <div class="rs-memberBiz">Goldstein Group Communications</div>
-    <div class="rs-memberActions">
-      <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-handshake"></i> Request a 1-to-1</a>
-      <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-paper-plane"></i> Share a referral</a>
-      <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
-    </div>
-  </div>
-</article>
-
+        <!-- 8 -->
+        <article class="rs-memberCard">
+          <img class="rs-headshot" alt="Dylan Goldstein"
+               src="https://drive.google.com/uc?export=view&id=1oX7j2B8m7uQ8G4j8a3qv4Qw2G1zj1H9G">
+          <div class="rs-memberBody">
+            <div class="rs-memberName">Dylan Goldstein</div>
+            <div class="rs-memberBiz">Goldstein Group Communications</div>
+            <div class="rs-memberActions">
+              <a class="rs-miniBtn rs-miniBtn--muted rs-req11Btn" href="#" data-member="Dylan Goldstein" data-biz="Goldstein Group Communications"><i class="fa-solid fa-handshake"></i> Request a 1-to-1</a>
+              <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-paper-plane"></i> Share a referral</a>
+              <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
+            </div>
+          </div>
+        </article>
 
       </div>
 
-      <!-- Bottom note that disappears while user is searching/filtering -->
       <div class="rs-dirBottomNote" id="rsBottomNote">
         Can’t find what you need? Try searching by trade or town — or browse by category.
       </div>
@@ -826,13 +816,238 @@
 </main>
 
 
+<!-- =========================
+     1-TO-1 REQUEST MODAL
+========================= -->
+<div class="rs-req11Overlay" id="rsReq11Overlay" aria-hidden="true">
+  <div class="rs-req11Modal" role="dialog" aria-modal="true" aria-labelledby="rsReq11Title">
+
+    <button class="rs-req11Close" id="rsReq11Close" type="button" aria-label="Close 1-to-1 request">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <div class="rs-req11Head">
+      <div class="rs-req11Kicker"><i class="fa-solid fa-handshake"></i> 1-to-1 Request</div>
+      <div class="rs-req11TitleRow">
+        <h2 class="rs-req11Title" id="rsReq11Title">Request a 1-to-1</h2>
+      </div>
+      <div class="rs-req11Sub" id="rsReq11Sub">
+        Propose a couple of times — they can accept one or suggest alternatives.
+      </div>
+    </div>
+
+    <div class="rs-req11Body" id="rsReq11Body">
+      <form class="rs-req11Form" id="rsReq11Form">
+
+        <div class="rs-req11FormGrid">
+
+          <!-- LEFT COLUMN (CALENDAR FIRST NOW) -->
+          <div class="rs-req11Col">
+
+            <div class="rs-req11Block">
+              <div class="rs-req11Label">Proposed date & time options</div>
+
+              <div class="rs-req11CalendarWrap" id="rsReq11CalendarWrap" aria-label="Date picker calendar">
+                <div class="rs-calTop">
+                  <button class="rs-calNav" type="button" id="rsCalPrev" aria-label="Previous month">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </button>
+                  <div class="rs-calMonth" id="rsCalMonth">Month YYYY</div>
+                  <button class="rs-calNav" type="button" id="rsCalNext" aria-label="Next month">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </div>
+
+                <div class="rs-calDow" aria-hidden="true">
+                  <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+                </div>
+
+                <!-- Calendar STAGE: calendar first; click date => time replaces footprint -->
+                <div class="rs-calStage" id="rsCalStage">
+                  <!-- STAGE 1: Calendar -->
+                  <div class="rs-calGrid" id="rsCalGrid" role="grid" aria-label="Calendar day grid"></div>
+
+                  <!-- STAGE 2: Time picker (replaces calendar footprint) -->
+                  <div class="rs-timeStage" id="rsTimeStage" aria-hidden="true" style="display:none;">
+                    <div class="rs-timeStageTop">
+                      <button class="rs-timeBack" type="button" id="rsTimeBack" aria-label="Back to calendar">
+                        <i class="fa-solid fa-arrow-left"></i> Back
+                      </button>
+
+                      <div class="rs-timeStageTitle">
+                        <div class="rs-timeGridTitle" id="rsTimeGridTitle">Pick a time</div>
+                        <div class="rs-timeGridMeta">
+                          <i class="fa-solid fa-clock"></i>
+                          <span><span id="rsTimeDur">15</span> min</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="rs-timeGrid" id="rsTimeGrid" aria-label="Time picker grid"></div>
+
+                    <div class="rs-timeToast" id="rsTimeToast" role="status" aria-live="polite" style="display:none;"></div>
+
+                    <div class="rs-calHint" id="rsCalHint">
+                      Select <strong>at least 2</strong> date & time options you’re available.
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Selected chips -->
+              <div class="rs-req11Selected" aria-live="polite">
+                <div class="rs-req11SelectedTop">
+                  <div class="rs-req11SelectedLabel">
+                    Selected options
+                    <span class="rs-req11Count" id="rsReq11Count">0/2</span>
+                  </div>
+
+                  <button class="rs-req11Link" type="button" id="rsReq11ClearDates">
+                    Clear
+                  </button>
+                </div>
+
+                <div class="rs-req11Chips" id="rsReq11Chips"></div>
+
+               
+              </div>
+
+              <input type="hidden" name="proposed_datetimes" id="rsReq11Dates" value="">
+            </div>
+
+          </div>
+
+          <!-- RIGHT COLUMN -->
+          <div class="rs-req11Col">
+
+            <!-- Meeting type -->
+            <div class="rs-req11Block">
+              <div class="rs-req11Label">Meeting type</div>
+
+              <div class="rs-req11Seg" role="tablist" aria-label="Meeting type selector">
+                <button class="rs-req11SegBtn is-active" type="button" data-type="virtual" aria-pressed="true">
+                  <i class="fa-solid fa-video"></i> Virtual
+                </button>
+                <button class="rs-req11SegBtn" type="button" data-type="inperson" aria-pressed="false">
+                  <i class="fa-solid fa-location-dot"></i> Face-to-face
+                </button>
+              </div>
+            </div>
+
+            <!-- Duration -->
+            <div class="rs-req11Block">
+              <div class="rs-req11Label">Duration</div>
+              <div class="rs-req11Pills" aria-label="Duration options">
+                <button class="rs-req11Pill is-active" type="button" data-duration="15" aria-pressed="true">15 mins</button>
+                <button class="rs-req11Pill" type="button" data-duration="30" aria-pressed="false">30 mins</button>
+                <button class="rs-req11Pill" type="button" data-duration="45" aria-pressed="false">45 mins</button>
+                <button class="rs-req11Pill" type="button" data-duration="60" aria-pressed="false">1 hr</button>
+              </div>
+              <input type="hidden" name="duration" id="rsReq11Duration" value="15">
+            </div>
+
+            <!-- In-person address -->
+<div class="rs-req11Block rs-req11Address" id="rsReq11Address" style="display:none;">
+  <div class="rs-req11Label">Meeting location</div>
+
+  <div class="rs-req11Field rs-mapField">
+    <label class="rs-req11FieldLabel" for="rsMapSearch">Search for a place</label>
+
+    <div class="rs-mapSearchWrap">
+      <i class="fa-solid fa-location-dot rs-mapIcon" aria-hidden="true"></i>
+      <input class="rs-req11Input rs-mapInput"
+             id="rsMapSearch"
+             type="text"
+             placeholder="Start typing an address, business, or landmark..."
+             autocomplete="off">
+      <button type="button" class="rs-mapClear" id="rsMapClear" aria-label="Clear location" title="Clear" style="display:none;">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="rs-mapDropdown" id="rsMapDropdown" style="display:none;" role="listbox" aria-label="Location suggestions"></div>
+
+    <div class="rs-mapPicked" id="rsMapPicked" style="display:none;">
+      <i class="fa-solid fa-circle-check"></i>
+      <span>Selected:</span>
+      <a href="#" target="_blank" rel="noopener" id="rsMapPickedLink">Open in Google Maps</a>
+    </div>
+
+    <!-- hidden outputs -->
+    <input type="hidden" name="maps_place_label" id="rsMapsPlaceLabel" value="">
+    <input type="hidden" name="maps_url" id="rsMapsUrl" value="">
+  </div>
+
+  <div class="rs-req11InlineNote" style="margin-top:10px;">
+    <i class="fa-solid fa-circle-info"></i>
+    Choose a location that’s easy to find & park.
+  </div>
+</div>
+
+
+            <!-- Virtual options -->
+            <div class="rs-req11Block rs-req11Virtual" id="rsReq11Virtual">
+              <div class="rs-req11Label">Virtual meeting location</div>
+
+              <label class="rs11-check">
+                <input class="rs11-check__input" type="checkbox" id="rsReq11BuiltIn" checked>
+                <span class="rs11-check__box" aria-hidden="true"></span>
+                <span class="rs11-check__text">Use built-in Segwik meeting location (recommended)</span>
+              </label>
+
+              <div class="rs-req11Field rs-req11VirtualLink" id="rsReq11VirtualLink" style="display:none;">
+                <label class="rs-req11FieldLabel" for="rsVirtualLink">Virtual link</label>
+                <input class="rs-req11Input" id="rsVirtualLink" name="virtual_link" type="url" placeholder="https://zoom.us/j/..." autocomplete="url">
+              </div>
+            </div>
+
+          </div>
+
+          <!-- FULL WIDTH -->
+          <div class="rs-req11Col rs-req11Col--full">
+
+            <!-- Message -->
+            <div class="rs-req11Block">
+              <div class="rs-req11Label">Message</div>
+              <textarea class="rs-req11Textarea" name="message" id="rsReq11Message" rows="5"
+                placeholder="Add context (what you’d like to talk about, referral goals, what you’re looking for, etc.)."></textarea>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Sticky footer actions -->
+        <div class="rs-req11Footer">
+          <div class="rs-req11FootMeta" id="rsReq11FootMeta">
+            <i class="fa-solid fa-lock"></i> Your contact details are shared only with the recipient.
+          </div>
+
+          <div class="rs-req11FootBtns">
+            <button class="rs11-btn rs11-btn--ghost" id="rsReq11Cancel" type="button">Cancel</button>
+            <button class="rs11-btn rs11-btn--primary" id="rsReq11Send" type="submit">
+              <i class="fa-solid fa-paper-plane"></i> Send 1-to-1 request
+            </button>
+          </div>
+        </div>
+
+        <input type="hidden" name="to_member" id="rsReq11ToMember" value="">
+        <input type="hidden" name="to_business" id="rsReq11ToBiz" value="">
+        <input type="hidden" name="meeting_type" id="rsReq11Type" value="virtual">
+
+      </form>
+    </div>
+
+  </div>
+</div>
+
+
 <style>
   /* =========================================================
-     DIRECTORY PAGE STYLES ONLY (SCOPED)
-     Does NOT affect header/footer
+     GLOBAL TOKENS (MUST BE GLOBAL — MODAL LIVES OUTSIDE .rs-dir)
   ========================================================= */
-
-  .rs-dir{
+  :root{
     --rs-red:#CF2030;
     --rs-ink:#111827;
     --rs-muted:#6B7280;
@@ -840,12 +1055,16 @@
     --rs-soft:#F6F7FB;
     --rs-soft2:#FBFBFD;
     --rs-shadow: 0 12px 28px rgba(0,0,0,.08);
+  }
 
-    font-family: Arial, Helvetica, sans-serif;
+  /* =========================================================
+     DIRECTORY PAGE STYLES ONLY (SCOPED)
+  ========================================================= */
+  .rs-dir{
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
     color: var(--rs-ink);
     background:#fff;
   }
-
   .rs-dir, .rs-dir *{ box-sizing:border-box; }
 
   .rs-container{
@@ -861,7 +1080,6 @@
     background:
       radial-gradient(900px 420px at 15% 0%, rgba(207,32,48,.10), rgba(255,255,255,0) 55%),
       radial-gradient(900px 420px at 85% 25%, rgba(17,24,39,.06), rgba(255,255,255,0) 55%);
-
   }
   .rs-dirHero__grid{
     display:grid;
@@ -874,18 +1092,16 @@
     font-size:40px;
     letter-spacing:-.03em;
     line-height:1.08;
+    font-weight:700;
   }
   .rs-dirHero__sub{
     margin:12px 0 14px;
     color:var(--rs-muted);
     line-height:1.7;
     max-width:620px;
+    font-weight:400;
   }
-  .rs-dirHero__meta{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-  }
+  .rs-dirHero__meta{ display:flex; flex-wrap:wrap; gap:10px; }
   .rs-pill{
     display:inline-flex;
     align-items:center;
@@ -895,7 +1111,7 @@
     background:rgba(207,32,48,.08);
     color:var(--rs-red);
     border:1px solid rgba(207,32,48,.12);
-    font-weight:700;
+    font-weight:600;
     font-size:13px;
   }
 
@@ -919,18 +1135,8 @@
 
   /* Tools */
   .rs-dirTools{ padding:18px 0 6px; }
-  .rs-toolsRow{
-    display:flex;
-    flex-direction:column;
-    gap:12px;
-  }
-
-  .rs-searchWrap{
-    display:flex;
-    flex-direction:column;
-    gap:10px;
-  }
-
+  .rs-toolsRow{ display:flex; flex-direction:column; gap:12px; }
+  .rs-searchWrap{ display:flex; flex-direction:column; gap:10px; }
   .rs-searchBar{
     display:flex;
     gap:10px;
@@ -945,68 +1151,31 @@
     border-color: rgba(207,32,48,.28);
     box-shadow: 0 14px 30px rgba(207,32,48,.10);
   }
-
-  .rs-searchIcon{
-    opacity:.75;
-    font-size:16px;
-    color:#374151;
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    width:22px;
-  }
+  .rs-searchIcon{ opacity:.75; font-size:16px; color:#374151; width:22px; }
   .rs-searchBar input{
-    border:none;
-    outline:none;
-    font-size:14px;
-    flex:1;
-    padding:10px 6px;
-    min-width:160px;
+    border:none; outline:none; font-size:14px; flex:1; padding:10px 6px; min-width:160px;
+    font-family:inherit;
+    font-weight:400;
   }
 
-  /* Clear X button (only shown when typing) */
   .rs-clearBtn{
-    width:38px;
-    height:38px;
-    border-radius:12px;
+    width:38px;height:38px;border-radius:12px;
     border:1px solid rgba(17,24,39,.10);
     background: rgba(17,24,39,.04);
     color:#374151;
-    display:none;
-    align-items:center;
-    justify-content:center;
+    display:none; align-items:center; justify-content:center;
     cursor:pointer;
     transition:.18s ease;
+    font-family:inherit;
+    font-weight:600;
   }
-  .rs-clearBtn:hover{
-    transform: translateY(-1px);
-    box-shadow: 0 12px 22px rgba(0,0,0,.10);
-  }
+  .rs-clearBtn:hover{ transform: translateY(-1px); box-shadow: 0 12px 22px rgba(0,0,0,.10); }
   .rs-clearBtn.is-visible{ display:inline-flex; }
 
-  /* Results meta */
-  .rs-resultsMeta{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:12px;
-    flex-wrap:wrap;
-    font-size:13px;
-    color:#4B5563;
-  }
-  .rs-resultsCount{
-    font-weight:700;
-    color:#111827;
-  }
-  .rs-activeFilter{
-    color:#6B7280;
-  }
+  .rs-resultsMeta{ display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; font-size:13px; color:#4B5563; }
+  .rs-resultsCount{ font-weight:600; color:#111827; }
 
-  .rs-filterRow{
-    display:flex;
-    gap:8px;
-    flex-wrap:wrap;
-  }
+  .rs-filterRow{ display:flex; gap:8px; flex-wrap:wrap; }
   .rs-chip{
     cursor:pointer;
     border:1px solid rgba(17,24,39,.12);
@@ -1020,26 +1189,14 @@
     display:inline-flex;
     align-items:center;
     gap:8px;
+    font-family:inherit;
   }
-  .rs-chip:hover{
-    transform:translateY(-1px);
-    box-shadow:0 10px 18px rgba(0,0,0,.06);
-  }
-  .rs-chip.is-active{
-    background:rgba(207,32,48,.10);
-    color:var(--rs-red);
-    border-color:rgba(207,32,48,.18);
-  }
+  .rs-chip:hover{ transform:translateY(-1px); box-shadow:0 10px 18px rgba(0,0,0,.06); }
+  .rs-chip.is-active{ background:rgba(207,32,48,.10); color:var(--rs-red); border-color:rgba(207,32,48,.18); }
 
   /* Grid */
   .rs-dirGridWrap{ padding:12px 0 56px; }
-  .rs-dirGrid{
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap:14px;
-    margin-top:14px;
-  }
-
+  .rs-dirGrid{ display:grid; grid-template-columns: repeat(3, 1fr); gap:14px; margin-top:14px; }
   .rs-memberCard{
     border:1px solid rgba(17,24,39,.10);
     background:#fff;
@@ -1050,43 +1207,17 @@
     display:flex;
     flex-direction:column;
   }
-  .rs-memberCard:hover{
-    transform: translateY(-2px);
-    box-shadow: var(--rs-shadow);
-  }
+  .rs-memberCard:hover{ transform: translateY(-2px); box-shadow: var(--rs-shadow); }
 
-  .rs-headshot{
-    width:100%;
-    height:210px;
-    object-fit:cover;
-    display:block;
-    background:#f3f4f6;
-  }
+  .rs-headshot{ width:100%; height:210px; object-fit:cover; display:block; background:#f3f4f6; }
 
-  .rs-memberBody{
-    padding:14px;
-    display:flex;
-    flex-direction:column;
-    gap:10px;
-  }
+  .rs-memberBody{ padding:14px; display:flex; flex-direction:column; gap:10px; }
   .rs-memberName{ font-weight:700; font-size:15px; }
-  .rs-memberBiz{
-    color:var(--rs-muted);
-    font-size:13px;
-    line-height:1.4;
-    margin-top:-6px;
-  }
+  .rs-memberBiz{ color:var(--rs-muted); font-size:13px; line-height:1.4; margin-top:-6px; }
 
-  .rs-memberActions{
-    display:flex;
-    flex-wrap:wrap;
-    gap:8px;
-    margin-top:4px;
-  }
+  .rs-memberActions{ display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
   .rs-miniBtn{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
+    display:inline-flex; align-items:center; gap:8px;
     padding:9px 11px;
     border-radius:12px;
     border:1px solid rgba(17,24,39,.12);
@@ -1096,22 +1227,12 @@
     font-size:13px;
     color:#111827;
     transition:.18s ease;
+    font-family:inherit;
   }
-  .rs-miniBtn:hover{
-    transform: translateY(-1px);
-    box-shadow: 0 12px 22px rgba(0,0,0,.10);
-  }
-  .rs-miniBtn--muted{
-    font-weight:700;
-    color:#374151;
-    background:rgba(17,24,39,.04);
-  }
+  .rs-miniBtn:hover{ transform: translateY(-1px); box-shadow: 0 12px 22px rgba(0,0,0,.10); }
+  .rs-miniBtn--muted{ color:#374151; background:rgba(17,24,39,.04); font-weight:700; }
 
-  .rs-dirBottomNote{
-    margin-top:18px;
-    color:#6B7280;
-    font-size:13px;
-  }
+  .rs-dirBottomNote{ margin-top:18px; color:#6B7280; font-size:13px; }
 
   /* Empty state */
   .rs-emptyState{
@@ -1126,8 +1247,7 @@
   }
   .rs-emptyState.is-visible{ display:block; }
   .rs-emptyIcon{
-    width:54px;height:54px;
-    border-radius:18px;
+    width:54px;height:54px;border-radius:18px;
     background: rgba(207,32,48,.10);
     color: var(--rs-red);
     display:flex;align-items:center;justify-content:center;
@@ -1135,73 +1255,754 @@
     font-size:18px;
     font-weight:700;
   }
-  .rs-emptyTitle{ font-weight:600; font-size:16px; margin-bottom:6px; }
+  .rs-emptyTitle{ font-weight:700; font-size:16px; margin-bottom:6px; }
   .rs-emptyText{ color:var(--rs-muted); font-size:13px; line-height:1.6; margin-bottom:14px; }
   .rs-emptyBtn{
     cursor:pointer;
     border:none;
     background: var(--rs-red);
     color:#fff;
-    font-weight:600;
+    font-weight:700;
     font-size:13px;
     padding:11px 14px;
     border-radius:14px;
     transition:.18s ease;
+    font-family:inherit;
   }
-  .rs-emptyBtn:hover{
-    filter:brightness(.98);
+  .rs-emptyBtn:hover{ filter:brightness(.98); transform: translateY(-1px); box-shadow: 0 14px 26px rgba(207,32,48,.18); }
+
+  /* =========================================================
+     1-TO-1 MODAL STYLES (SCOPED)
+  ========================================================= */
+  .rs-req11Overlay{
+    position:fixed; inset:0;
+    background: rgba(17,24,39,.56);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:22px;
+    z-index:9999;
+    font-family:"Segoe UI", Arial, Helvetica, sans-serif;
+  }
+  .rs-req11Overlay.is-open{ display:flex; animation: rsFadeIn .18s ease; }
+  @keyframes rsFadeIn{ from{ opacity:0; } to{ opacity:1; } }
+
+  .rs-req11Modal{
+    width:min(1040px, 100%);
+    max-height: calc(100vh - 44px);
+    border-radius:22px;
+    background:#fff;
+    border:1px solid rgba(17,24,39,.10);
+    box-shadow: 0 22px 60px rgba(0,0,0,.28);
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    transform: translateY(8px) scale(.99);
+    opacity:0;
+    animation: rsModalIn .22s ease forwards;
+  }
+  @keyframes rsModalIn{ to{ transform: translateY(0) scale(1); opacity:1; } }
+
+  .rs-req11Close{
+    position:absolute; right:14px; top:14px;
+    width:42px; height:42px; border-radius:14px;
+    border:1px solid rgba(17,24,39,.10);
+    background: rgba(17,24,39,.04);
+    color:#111827;
+    cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    transition:.18s ease;
+    z-index:3;
+    font-family:inherit;
+    font-weight:600;
+  }
+  .rs-req11Close:hover{ transform: translateY(-1px); box-shadow:0 14px 26px rgba(0,0,0,.14); }
+
+  .rs-req11Head{
+    padding:18px 18px 14px;
+    background:
+      radial-gradient(880px 300px at 10% 0%, rgba(207,32,48,.12), rgba(255,255,255,0) 60%),
+      radial-gradient(900px 320px at 90% 0%, rgba(17,24,39,.06), rgba(255,255,255,0) 55%),
+      linear-gradient(180deg, #fff, #FBFBFD);
+    border-bottom:1px solid rgba(17,24,39,.08);
+    flex:0 0 auto;
+  }
+  .rs-req11Kicker{
+    display:inline-flex; gap:8px; align-items:center;
+    padding:7px 10px;
+    border-radius:999px;
+    background: rgba(207,32,48,.10);
+    color: var(--rs-red);
+    border:1px solid rgba(207,32,48,.14);
+    font-weight:700;
+    font-size:12px;
+  }
+  .rs-req11TitleRow{ margin-top:10px; display:flex; justify-content:space-between; align-items:flex-end; gap:12px; flex-wrap:wrap; }
+  .rs-req11Title{ margin:0; font-size:24px; letter-spacing:-.02em; line-height:1.12; font-weight:700; }
+  .rs-req11Sub{ margin-top:8px; color:#4B5563; font-size:13px; line-height:1.6; font-weight:400; }
+
+  .rs-req11Body{ overflow:auto; padding:0; flex: 1 1 auto; }
+  .rs-req11Form{ padding:16px 18px 16px; display:flex; flex-direction:column; gap:14px; min-height: 100%; }
+
+  .rs-req11FormGrid{ display:grid; grid-template-columns: 1fr 1fr; gap:14px; }
+  .rs-req11Col{ display:flex; flex-direction:column; gap:14px; }
+  .rs-req11Col--full{ grid-column: 1 / -1; }
+
+  .rs-req11Block{
+    border:1px solid rgba(17,24,39,.10);
+    border-radius:18px;
+    background: linear-gradient(180deg, #fff, #FBFBFD);
+    padding:14px;
+    box-shadow: 0 10px 20px rgba(0,0,0,.05);
+  }
+  .rs-req11Label{ font-weight:700; font-size:13px; margin-bottom:10px; letter-spacing:-.01em; }
+
+  /* Meeting type segmented control */
+  .rs-req11Seg{ display:flex; gap:10px; flex-wrap:wrap; }
+  .rs-req11SegBtn{
+    flex:1 1 220px;
+    cursor:pointer;
+    border:1px solid rgba(17,24,39,.12);
+    background:#fff;
+    padding:11px 12px;
+    border-radius:16px;
+    font-weight:700;
+    font-size:13px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    transition:.18s ease;
+    color:#111827;
+    justify-content:center;
+    font-family:inherit;
+  }
+  .rs-req11SegBtn:hover{ transform: translateY(-1px); box-shadow: 0 12px 22px rgba(0,0,0,.10); }
+  .rs-req11SegBtn.is-active{ background: rgba(207,32,48,.10); border-color: rgba(207,32,48,.22); color: var(--rs-red); }
+
+  /* Duration pills */
+  .rs-req11Pills{ display:flex; flex-wrap:wrap; gap:8px; }
+  .rs-req11Pill{
+    cursor:pointer;
+    border:1px solid rgba(17,24,39,.12);
+    background:#fff;
+    padding:10px 12px;
+    border-radius:999px;
+    font-weight:700;
+    font-size:13px;
+    color:#374151;
+    transition:.18s ease;
+    font-family:inherit;
+  }
+  .rs-req11Pill:hover{ transform: translateY(-1px); box-shadow:0 10px 18px rgba(0,0,0,.08); }
+  .rs-req11Pill.is-active{ background: rgba(207,32,48,.10); border-color: rgba(207,32,48,.22); color: var(--rs-red); }
+
+  /* Calendar wrap */
+  .rs-req11CalendarWrap{
+    border-radius:18px;
+    border:1px solid rgba(17,24,39,.10);
+    background:#fff;
+    overflow:hidden;
+  }
+  .rs-calTop{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 10px;
+    background: linear-gradient(180deg, #fff, #FBFBFD);
+    border-bottom:1px solid rgba(17,24,39,.08);
+  }
+  .rs-calMonth{ font-weight:700; font-size:14px; letter-spacing:-.01em; }
+  .rs-calNav{
+    width:38px;height:38px;border-radius:14px;
+    border:1px solid rgba(17,24,39,.10);
+    background: rgba(17,24,39,.04);
+    cursor:pointer;
+    transition:.18s ease;
+    display:flex; align-items:center; justify-content:center;
+    font-family:inherit;
+    font-weight:600;
+  }
+  .rs-calNav:hover{ transform: translateY(-1px); box-shadow:0 12px 22px rgba(0,0,0,.12); }
+
+  .rs-calDow{
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap:0;
+    padding:10px 10px 8px;
+    background:#fff;
+    color:#6B7280;
+    font-weight:600;
+    font-size:12px;
+  }
+
+  /* Stage container */
+  .rs-calStage{
+    position:relative;
+    background:#fff;
+  }
+
+  .rs-calGrid{
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap:8px;
+    padding:10px;
+    background:#fff;
+  }
+
+  .rs-timeStage{
+    padding:12px;
+    background: linear-gradient(180deg, #fff, #FBFBFD);
+  }
+
+  .rs-timeStageTop{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:10px;
+    margin-bottom:10px;
+  }
+
+  .rs-timeBack{
+    cursor:pointer;
+    border:1px solid rgba(17,24,39,.12);
+    background:#fff;
+    border-radius:14px;
+    padding:10px 12px;
+    font-weight:700;
+    font-size:13px;
+    color:#111827;
+    transition:.18s ease;
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    font-family:inherit;
+  }
+  .rs-timeBack:hover{
     transform: translateY(-1px);
-    box-shadow: 0 14px 26px rgba(207,32,48,.18);
+    box-shadow:0 12px 22px rgba(0,0,0,.10);
+  }
+
+  .rs-timeStageTitle{
+    display:flex;
+    align-items:flex-end;
+    gap:10px;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+  }
+
+  /* Days */
+  .rs-day{
+    height:48px;
+    border-radius:16px;
+    border:1px solid rgba(17,24,39,.10);
+    background: rgba(17,24,39,.03);
+    cursor:pointer;
+    transition:.18s ease;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    font-size:13px;
+    color:#111827;
+    user-select:none;
+    font-family:inherit;
+  }
+  .rs-day:hover{ transform: translateY(-1px); box-shadow:0 12px 22px rgba(0,0,0,.10); }
+  .rs-day.is-off{ opacity:.35; cursor:not-allowed; background: rgba(17,24,39,.02); }
+  .rs-day.is-empty{ background:transparent; border:none; cursor:default; box-shadow:none; }
+  .rs-day.is-selected{ background: rgba(207,32,48,.10); border-color: rgba(207,32,48,.22); color: var(--rs-red); }
+
+  .rs-day .rs-dayBadge{
+    position:absolute; right:8px; top:8px;
+    width:18px;height:18px;border-radius:999px;
+    background: var(--rs-red);
+    color:#fff;
+    font-weight:700;
+    font-size:11px;
+    display:flex; align-items:center; justify-content:center;
+    transform: scale(.8);
+    opacity:0;
+    transition:.18s ease;
+  }
+  .rs-day.is-selected .rs-dayBadge{ opacity:1; transform: scale(1); }
+
+  .rs-req11CalendarWrap.rs-pulse{ animation: rsPulse .42s ease; }
+  @keyframes rsPulse{
+    0%{ box-shadow: 0 0 0 rgba(207,32,48,0); transform: translateY(0); }
+    45%{ box-shadow: 0 0 0 6px rgba(207,32,48,.12); transform: translateY(-1px); }
+    100%{ box-shadow: 0 0 0 rgba(207,32,48,0); transform: translateY(0); }
+  }
+
+  /* Time grid */
+  .rs-timeGridTitle{
+    font-weight:700;
+    color:#111827;
+    font-size:13px;
+    line-height:1.35;
+  }
+  .rs-timeGridMeta{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-weight:600;
+    color:#4B5563;
+    font-size:12.5px;
+    padding:6px 10px;
+    border-radius:999px;
+    border:1px solid rgba(17,24,39,.10);
+    background:#fff;
+  }
+
+  .rs-timeGrid{
+    margin-top:10px;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:8px;
+  }
+  .rs-timeBtn{
+    cursor:pointer;
+    border-radius:14px;
+    border:1px solid rgba(17,24,39,.12);
+    background:#fff;
+    padding:10px 10px;
+    font-weight:600;
+    font-size:13px;
+    color:#111827;
+    transition:.18s ease;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    font-family:inherit;
+  }
+  .rs-timeBtn:hover{
+    transform: translateY(-1px);
+    box-shadow:0 12px 22px rgba(0,0,0,.10);
+  }
+  .rs-timeBtn.is-picked{
+    background: rgba(207,32,48,.10);
+    border-color: rgba(207,32,48,.22);
+    color: var(--rs-red);
+  }
+
+/* green check toast */
+.rs-timeToast{
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  z-index: 5;
+
+  border-radius:16px;
+  border:1px solid rgba(16,185,129,.28);
+  background: rgba(16,185,129,.10);
+  color:#065F46;
+  font-weight:600;
+  font-size:12.5px;
+  line-height:1.5;
+  padding:10px 12px;
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+
+  box-shadow: 0 16px 30px rgba(0,0,0,.12);
+}
+
+/* ensure the stage can position the toast */
+.rs-timeStage{
+  position: relative;
+  padding:12px;
+  background: linear-gradient(180deg, #fff, #FBFBFD);
+}
+
+
+  .rs-calHint{
+    margin-top:10px;
+    padding:10px 12px 12px;
+    border-radius:16px;
+    border:1px solid rgba(17,24,39,.08);
+    color:#6B7280;
+    font-size:12.5px;
+    line-height:1.6;
+    background: #fff;
+    font-weight:400;
+  }
+
+  /* Selected chips */
+  .rs-req11Selected{
+    margin-top:12px;
+    border:1px solid rgba(17,24,39,.10);
+    border-radius:18px;
+    background: linear-gradient(180deg, #fff, #FBFBFD);
+    padding:12px;
+  }
+  .rs-req11SelectedTop{ display:flex; align-items:center; justify-content:space-between; gap:10px; }
+  .rs-req11SelectedLabel{ font-weight:700; font-size:13px; display:flex; align-items:center; gap:10px; }
+  .rs-req11Count{
+    display:inline-flex;
+    padding:5px 8px;
+    border-radius:999px;
+    border:1px solid rgba(17,24,39,.10);
+    background:#fff;
+    font-size:12px;
+    font-weight:700;
+    color:#374151;
+  }
+  .rs-req11Link{
+    cursor:pointer;
+    border:none;
+    background:transparent;
+    color: var(--rs-red);
+    font-weight:600;
+    font-size:12.5px;
+    text-decoration:underline;
+    text-underline-offset: 3px;
+    font-family:inherit;
+  }
+  .rs-req11Chips{ display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
+
+  .rs-req11Chip{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    border-radius:999px;
+    padding:9px 10px;
+    background: rgba(207,32,48,.10);
+    border:1px solid rgba(207,32,48,.18);
+    color: var(--rs-red);
+    font-weight:600;
+    font-size:12.5px;
+    font-family:inherit;
+  }
+  .rs-req11Chip button{
+    width:26px;height:26px;border-radius:999px;
+    border:1px solid rgba(207,32,48,.22);
+    background:#fff;
+    cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    color: var(--rs-red);
+    transition:.18s ease;
+    font-family:inherit;
+    font-weight:600;
+  }
+  .rs-req11Chip button:hover{ transform: translateY(-1px); box-shadow:0 10px 18px rgba(0,0,0,.10); }
+
+  .rs-req11Nudge{
+    margin-top:10px;
+    border-radius:16px;
+    border:1px dashed rgba(207,32,48,.22);
+    background: rgba(207,32,48,.06);
+    padding:10px 12px;
+    font-size:12.5px;
+    color:#374151;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    font-weight:600;
+  }
+  .rs-req11NudgeBtn{
+    cursor:pointer;
+    border:none;
+    background: var(--rs-red);
+    color:#fff;
+    font-weight:700;
+    font-size:12.5px;
+    padding:9px 12px;
+    border-radius:14px;
+    transition:.18s ease;
+    white-space:nowrap;
+    font-family:inherit;
+  }
+  .rs-req11NudgeBtn:hover{ transform: translateY(-1px); box-shadow:0 14px 26px rgba(207,32,48,.18); }
+
+  /* Fields */
+  .rs-req11Field{ display:flex; flex-direction:column; gap:6px; }
+  /* =========================
+   MAP SEARCH (1-field location picker)
+========================= */
+.rs-mapSearchWrap{
+  position: relative;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.rs-mapIcon{
+  position:absolute;
+  left:14px;
+  top:50%;
+  transform:translateY(-50%);
+  color:#6B7280;
+  font-size:15px;
+  opacity:.9;
+}
+
+.rs-mapInput{
+  padding-left:40px !important;
+}
+
+.rs-mapClear{
+  position:absolute;
+  right:10px;
+  top:50%;
+  transform:translateY(-50%);
+  width:34px;
+  height:34px;
+  border-radius:12px;
+  border:1px solid rgba(17,24,39,.10);
+  background: rgba(17,24,39,.04);
+  cursor:pointer;
+  transition:.18s ease;
+  color:#111827;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:inherit;
+  font-weight:700;
+}
+.rs-mapClear:hover{
+  transform:translateY(-50%) translateY(-1px);
+  box-shadow:0 12px 22px rgba(0,0,0,.10);
+}
+
+.rs-mapDropdown{
+  margin-top:8px;
+  border-radius:16px;
+  border:1px solid rgba(17,24,39,.10);
+  background:#fff;
+  overflow:hidden;
+  box-shadow:0 18px 40px rgba(0,0,0,.12);
+}
+
+.rs-mapOption{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+  padding:11px 12px;
+  border:none;
+  background:#fff;
+  cursor:pointer;
+  text-align:left;
+  transition:.12s ease;
+  font-family:inherit;
+}
+.rs-mapOption:hover{
+  background: rgba(207,32,48,.06);
+}
+.rs-mapOptionTitle{
+  font-weight:700;
+  font-size:13px;
+  color:#111827;
+}
+.rs-mapOptionMeta{
+  font-weight:600;
+  font-size:12.5px;
+  color:#6B7280;
+  line-height:1.35;
+}
+
+.rs-mapPicked{
+  margin-top:10px;
+  border-radius:16px;
+  border:1px solid rgba(16,185,129,.28);
+  background: rgba(16,185,129,.10);
+  color:#065F46;
+  font-weight:700;
+  font-size:12.5px;
+  padding:10px 12px;
+  display:flex;
+  gap:10px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.rs-mapPicked a{
+  color:#065F46;
+  text-decoration:underline;
+  text-underline-offset: 3px;
+}
+
+  .rs-req11FieldLabel{ font-weight:600; font-size:12px; color:#374151; }
+  .rs-req11Input, .rs-req11Textarea{
+    width:100%;
+    border:1px solid rgba(17,24,39,.12);
+    border-radius:16px;
+    padding:12px 12px;
+    font-size:13.5px;
+    outline:none;
+    transition:.18s ease;
+    background:#fff;
+    font-family:inherit;
+    font-weight:400;
+  }
+  .rs-req11Textarea{ resize:vertical; min-height:120px; }
+  .rs-req11Input:focus, .rs-req11Textarea:focus{
+    border-color: rgba(207,32,48,.28);
+    box-shadow: 0 14px 28px rgba(207,32,48,.10);
+  }
+
+  .rs-req11Grid2{ display:grid; grid-template-columns: 1fr 1fr; gap:10px; }
+  .rs-req11Grid4{ display:grid; grid-template-columns: 1.2fr .7fr .6fr 1fr; gap:10px; margin-top:10px; }
+
+  .rs-req11InlineNote{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 12px;
+    border-radius:16px;
+    border:1px solid rgba(17,24,39,.10);
+    background: rgba(17,24,39,.03);
+    font-weight:600;
+    color:#4B5563;
+    font-size:12.5px;
+    height:44px;
+  }
+
+  /* Unique checkbox */
+  .rs11-check{
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+    cursor:pointer;
+    user-select:none;
+    font-weight:600;
+    color:#374151;
+    font-size:13px;
+    line-height:1.45;
+    font-family:inherit;
+  }
+  .rs11-check__input{ position:absolute; opacity:0; pointer-events:none; }
+  .rs11-check__box{
+    width:22px;height:22px;border-radius:7px;
+    border:1px solid rgba(17,24,39,.18);
+    background:#fff;
+    display:inline-flex; align-items:center; justify-content:center;
+    margin-top:1px; flex:0 0 auto;
+    transition:.18s ease;
+  }
+  .rs11-check__input:checked + .rs11-check__box{
+    background: rgba(207,32,48,.10);
+    border-color: rgba(207,32,48,.28);
+  }
+  .rs11-check__input:checked + .rs11-check__box::after{
+    content:"";
+    width:10px;height:6px;
+    border-left:3px solid var(--rs-red);
+    border-bottom:3px solid var(--rs-red);
+    transform: rotate(-45deg);
+    display:block;
+    margin-top:-1px;
+  }
+
+  /* Footer sticky */
+  .rs-req11Footer{
+    position: sticky;
+    bottom: 0;
+    z-index: 2;
+    margin-top: 2px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    flex-wrap:wrap;
+    padding:12px 12px;
+    border-radius:18px;
+    border:1px solid rgba(17,24,39,.10);
+    background: linear-gradient(180deg, #fff, #FBFBFD);
+    box-shadow: 0 10px 20px rgba(0,0,0,.06);
+  }
+  .rs-req11FootMeta{
+    color:#6B7280;
+    font-size:12.5px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:600;
+  }
+  .rs-req11FootBtns{ display:flex; gap:10px; flex-wrap:wrap; margin-left:auto; }
+
+  /* ======= CRITICAL BUTTON FIX (no more white buttons) ======= */
+  .rs-req11Modal button.rs11-btn{
+    -webkit-appearance:none !important;
+    appearance:none !important;
+    cursor:pointer !important;
+    border:none !important;
+    border-radius:16px !important;
+    padding:12px 14px !important;
+    font-weight:700 !important;
+    font-size:13px !important;
+    transition:.18s ease !important;
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    gap:10px !important;
+    text-decoration:none !important;
+    line-height:1 !important;
+    white-space:nowrap !important;
+    font-family:"Segoe UI", Arial, Helvetica, sans-serif !important;
+  }
+  .rs-req11Modal button.rs11-btn:disabled{
+    opacity:.55 !important;
+    cursor:not-allowed !important;
+    transform:none !important;
+    box-shadow:none !important;
+    filter:none !important;
+  }
+  .rs-req11Modal button.rs11-btn--ghost{
+    background: rgba(17,24,39,.05) !important;
+    border:1px solid rgba(17,24,39,.10) !important;
+    color:#111827 !important;
+  }
+  .rs-req11Modal button.rs11-btn--ghost:hover{
+    transform: translateY(-1px) !important;
+    box-shadow:0 14px 26px rgba(0,0,0,.10) !important;
+  }
+  .rs-req11Modal button.rs11-btn--primary{
+    background-color: var(--rs-red) !important;
+    color:#fff !important;
+    border:1px solid rgba(207,32,48,.10) !important;
+    box-shadow: 0 14px 28px rgba(207,32,48,.18) !important;
+  }
+  .rs-req11Modal button.rs11-btn--primary:hover{
+    filter:brightness(.98) !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 18px 34px rgba(207,32,48,.22) !important;
   }
 
   /* Responsive */
   @media (max-width: 980px){
     .rs-dirHero__grid{ grid-template-columns: 1fr; }
     .rs-dirGrid{ grid-template-columns: repeat(2, 1fr); }
+    .rs-req11Grid4{ grid-template-columns: 1fr 1fr; }
+    .rs-req11FormGrid{ grid-template-columns: 1fr; }
   }
-
   @media (max-width: 520px){
     .rs-container{ padding:0 16px; }
     .rs-dirHero{ padding:32px 0 20px; }
     .rs-dirHero__title{ font-size:30px; }
     .rs-imgPh--dirHero{ height:220px; }
-
-    .rs-searchBar{
-      flex-wrap:wrap;
-      gap:10px;
-      padding:12px;
-    }
-    .rs-searchBar input{
-      flex:1 1 100%;
-      padding:12px 6px;
-      font-size:15px;
-    }
-    .rs-clearBtn{
-      width:100%;
-      border-radius:14px;
-      height:42px;
-      order:3;
-    }
-
-    .rs-resultsMeta{
-      flex-direction:column;
-      align-items:flex-start;
-      gap:6px;
-    }
-
     .rs-dirGrid{ grid-template-columns: 1fr; }
     .rs-headshot{ height:220px; }
     .rs-miniBtn{ width:100%; justify-content:center; }
+    .rs-req11Modal{ border-radius:20px; max-height: calc(100vh - 24px); }
+    .rs-req11Form{ padding:14px; gap:12px; }
+    .rs-req11Block{ padding:12px; border-radius:16px; }
+    .rs-day{ height:46px; border-radius:14px; }
+    .rs-req11Footer{ padding:10px; border-radius:16px; }
+    .rs-req11FootBtns{ width:100%; }
+    .rs-req11Modal button.rs11-btn{ width:100% !important; }
   }
 </style>
 
 
 <script>
   // =========================================================
-  // REALISTIC SEARCH + INDUSTRY FILTERING
-  // - search + category filter combine together
-  // - empty state if 0 results
-  // - hides bottom note while searching OR filtering
+  // SEARCH + FILTERING
   // =========================================================
   (function(){
     const input = document.getElementById('rsDirSearch');
@@ -1212,13 +2013,10 @@
     const grid = document.getElementById('rsDirGrid');
 
     const resultsCount = document.getElementById('rsResultsCount');
-    const activeFilter = document.getElementById('rsActiveFilter');
-
     const filterRow = document.getElementById('rsFilterRow');
     const cards = Array.from(document.querySelectorAll('.rs-memberCard'));
 
     let selectedFilter = 'all';
-
     if(!input || !cards.length || !filterRow) return;
 
     function normalize(str){
@@ -1239,23 +2037,9 @@
       }
     }
 
-    function filterLabel(key){
-      const map = {
-        all: "All categories",
-        home: "Home Services",
-        legal: "Legal",
-        health: "Health",
-        finance: "Finance",
-        realestate: "Real Estate",
-        business: "Business Services"
-      };
-      return map[key] || "All categories";
-    }
-
     function applyFilters(){
       const q = normalize(input.value);
       const isSearching = !!q || (selectedFilter !== 'all');
-
       setSearchingUI(isSearching);
 
       let shown = 0;
@@ -1266,14 +2050,12 @@
 
         const matchSearch = !q || haystack.includes(q);
         const matchFilter = (selectedFilter === 'all') || (category === selectedFilter);
-
         const match = matchSearch && matchFilter;
 
         card.style.display = match ? '' : 'none';
         if(match) shown++;
       });
 
-      // Update results meta
       if(resultsCount){
         if(selectedFilter === 'all' && !q){
           resultsCount.textContent = `Showing ${cards.length} members`;
@@ -1281,11 +2063,7 @@
           resultsCount.textContent = `Showing ${shown} member${shown === 1 ? '' : 's'}`;
         }
       }
-      if(activeFilter){
-        activeFilter.textContent = filterLabel(selectedFilter);
-      }
 
-      // Empty state
       if(emptyState){
         if(shown === 0){
           emptyState.classList.add('is-visible');
@@ -1297,13 +2075,11 @@
       }
     }
 
-    // Search input
     input.addEventListener('input', function(){
       updateClearBtn();
       applyFilters();
     });
 
-    // Clear search button
     clearBtn.addEventListener('click', function(){
       input.value = '';
       updateClearBtn();
@@ -1311,14 +2087,12 @@
       input.focus();
     });
 
-    // Empty state clear button
     if(emptyClear){
       emptyClear.addEventListener('click', function(){
         input.value = '';
         selectedFilter = 'all';
         updateClearBtn();
 
-        // reset chips
         Array.from(filterRow.querySelectorAll('.rs-chip')).forEach(btn => btn.classList.remove('is-active'));
         const allBtn = filterRow.querySelector('[data-filter="all"]');
         if(allBtn) allBtn.classList.add('is-active');
@@ -1328,7 +2102,6 @@
       });
     }
 
-    // Filter chips
     filterRow.addEventListener('click', function(e){
       const btn = e.target.closest('.rs-chip');
       if(!btn) return;
@@ -1336,18 +2109,722 @@
       const key = btn.getAttribute('data-filter') || 'all';
       selectedFilter = key;
 
-      // toggle active UI
       Array.from(filterRow.querySelectorAll('.rs-chip')).forEach(b => b.classList.remove('is-active'));
       btn.classList.add('is-active');
 
       applyFilters();
     });
 
-    // init
     updateClearBtn();
     applyFilters();
   })();
+
+
+  // =========================================================
+  // 1-TO-1 MODAL BEHAVIOR
+  // - Calendar on LEFT
+  // - Click date => time stage replaces calendar footprint
+  // - Back => returns to calendar stage
+  // - Click time => shows green check + adds to Selected options
+  // =========================================================
+  (function(){
+    const overlay = document.getElementById('rsReq11Overlay');
+    const closeBtn = document.getElementById('rsReq11Close');
+    const cancelBtn = document.getElementById('rsReq11Cancel');
+    const form = document.getElementById('rsReq11Form');
+
+    const title = document.getElementById('rsReq11Title');
+    const sub = document.getElementById('rsReq11Sub');
+    const toMember = document.getElementById('rsReq11ToMember');
+    const toBiz = document.getElementById('rsReq11ToBiz');
+
+    const typeHidden = document.getElementById('rsReq11Type');
+    const typeBtns = Array.from(document.querySelectorAll('.rs-req11SegBtn'));
+    const addressBlock = document.getElementById('rsReq11Address');
+    const virtualBlock = document.getElementById('rsReq11Virtual');
+
+    const durationHidden = document.getElementById('rsReq11Duration');
+    const durationBtns = Array.from(document.querySelectorAll('.rs-req11Pill'));
+
+    const builtIn = document.getElementById('rsReq11BuiltIn');
+    const virtualLinkWrap = document.getElementById('rsReq11VirtualLink');
+
+    const calMonth = document.getElementById('rsCalMonth');
+    const calGrid = document.getElementById('rsCalGrid');
+    const calPrev = document.getElementById('rsCalPrev');
+    const calNext = document.getElementById('rsCalNext');
+    const calWrap = document.getElementById('rsReq11CalendarWrap');
+
+    const calStage = document.getElementById('rsCalStage');
+    const timeStage = document.getElementById('rsTimeStage');
+    const timeBack = document.getElementById('rsTimeBack');
+
+    const timeGrid = document.getElementById('rsTimeGrid');
+    const timeGridTitle = document.getElementById('rsTimeGridTitle');
+    const timeDur = document.getElementById('rsTimeDur');
+    const toast = document.getElementById('rsTimeToast');
+
+    const chipsWrap = document.getElementById('rsReq11Chips');
+    const datetimesHidden = document.getElementById('rsReq11Dates');
+    const countEl = document.getElementById('rsReq11Count');
+    const clearBtn = document.getElementById('rsReq11ClearDates');
+    const nudge = document.getElementById('rsReq11Nudge');
+    const nudgeAddMore = document.getElementById('rsReq11AddMore');
+
+    if(!overlay || !form || !calGrid || !timeGrid || !timeStage) return;
+
+    let lastFocus = null;
+
+    const today = new Date();
+    today.setHours(0,0,0,0);
+    let viewYear = today.getFullYear();
+    let viewMonth = today.getMonth();
+    let meetingType = 'virtual';
+
+    let activeDayISO = "";
+    let selectedSlots = [];
+
+    const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+    function pad2(n){ return String(n).padStart(2,'0'); }
+    function toISODate(d){ return `${d.getFullYear()}-${pad2(d.getMonth()+1)}-${pad2(d.getDate())}`; }
+
+    function toNiceDate(isoDate){
+      const [y,m,d] = isoDate.split('-').map(Number);
+      const dt = new Date(y, m-1, d);
+      const dow = dt.toLocaleDateString(undefined, { weekday:'short' });
+      const mon = dt.toLocaleDateString(undefined, { month:'short' });
+      return `${dow}, ${mon} ${d}`;
+    }
+    function toNiceTime(hhmm){
+      const [h,m] = hhmm.split(':').map(Number);
+      const dt = new Date();
+      dt.setHours(h, m, 0, 0);
+      return dt.toLocaleTimeString(undefined, { hour:'numeric', minute:'2-digit' });
+    }
+    function slotToNice(slot){
+      const [d, t] = slot.split('T');
+      return `${toNiceDate(d)} • ${toNiceTime(t)}`;
+    }
+
+    function pulseCalendar(){
+      if(!calWrap) return;
+      calWrap.classList.remove('rs-pulse');
+      void calWrap.offsetWidth;
+      calWrap.classList.add('rs-pulse');
+    }
+
+    function openModal(memberName, bizName){
+      lastFocus = document.activeElement;
+
+      overlay.classList.add('is-open');
+      overlay.setAttribute('aria-hidden','false');
+      document.body.style.overflow = 'hidden';
+
+      const who = memberName ? `${memberName}${bizName ? ` — ${bizName}` : ''}` : 'Member';
+      title.textContent = `Request a 1-to-1 with ${who}`;
+      sub.textContent = `Propose a couple of times — ${memberName ? memberName.split(' ')[0] : 'they'} can accept one or suggest alternatives.`;
+
+      toMember.value = memberName || '';
+      toBiz.value = bizName || '';
+
+      setMeetingType('virtual', true);
+      setDuration('15', true);
+
+      if(builtIn) builtIn.checked = true;
+      toggleVirtualLink();
+
+      clearSlots(true);
+
+      viewYear = today.getFullYear();
+      viewMonth = today.getMonth();
+      renderCalendar();
+
+      hideTimeStage();
+
+      const first = overlay.querySelector('.rs-req11SegBtn');
+      if(first) first.focus();
+    }
+
+    function closeModal(){
+      overlay.classList.remove('is-open');
+      overlay.setAttribute('aria-hidden','true');
+      document.body.style.overflow = '';
+      if(lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
+    }
+
+    function toggleVirtualLink(){
+      if(!builtIn || !virtualLinkWrap) return;
+      virtualLinkWrap.style.display = builtIn.checked ? 'none' : '';
+    }
+
+    function setMeetingType(type, silent){
+      meetingType = type;
+      if(typeHidden) typeHidden.value = type;
+
+      typeBtns.forEach(btn=>{
+        const key = btn.getAttribute('data-type');
+        const active = key === type;
+        btn.classList.toggle('is-active', active);
+        btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+      });
+
+      if(type === 'inperson'){
+        if(addressBlock) addressBlock.style.display = '';
+        if(virtualBlock) virtualBlock.style.display = 'none';
+      }else{
+        if(addressBlock) addressBlock.style.display = 'none';
+        if(virtualBlock) virtualBlock.style.display = '';
+      }
+
+      if(!silent) pulseCalendar();
+    }
+
+    function setDuration(mins, silent){
+      if(durationHidden) durationHidden.value = String(mins);
+      if(timeDur) timeDur.textContent = String(mins);
+
+      durationBtns.forEach(btn=>{
+        const active = (btn.getAttribute('data-duration') === String(mins));
+        btn.classList.toggle('is-active', active);
+        btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+      });
+
+      if(activeDayISO){
+        buildTimeGrid();
+      }
+
+      if(!silent) pulseCalendar();
+    }
+
+    function clearSlots(silent){
+      selectedSlots = [];
+      if(datetimesHidden) datetimesHidden.value = "";
+      renderSelectedSlots();
+      renderCalendarBadges();
+      hideTimeStage();
+      if(!silent) pulseCalendar();
+    }
+
+    function renderSelectedSlots(){
+      chipsWrap.innerHTML = '';
+
+      selectedSlots.forEach(slot=>{
+        const chip = document.createElement('div');
+        chip.className = 'rs-req11Chip';
+        chip.innerHTML = `
+          <span><i class="fa-solid fa-calendar-days"></i> ${slotToNice(slot)}</span>
+          <button type="button" aria-label="Remove ${slotToNice(slot)}" data-slot="${slot}">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        `;
+        chipsWrap.appendChild(chip);
+      });
+
+      if(datetimesHidden) datetimesHidden.value = selectedSlots.join(',');
+
+      const c = selectedSlots.length;
+      if(countEl){
+        countEl.textContent = (c <= 2) ? `${c}/2` : `${c} selected`;
+      }
+
+      if(nudge){
+        if(c >= 2){
+          nudge.style.display = 'flex';
+          nudge.setAttribute('aria-hidden','false');
+        }else{
+          nudge.style.display = 'none';
+          nudge.setAttribute('aria-hidden','true');
+        }
+      }
+    }
+
+    function renderCalendar(){
+      calMonth.textContent = `${months[viewMonth]} ${viewYear}`;
+      calGrid.innerHTML = '';
+
+      const first = new Date(viewYear, viewMonth, 1);
+      const last = new Date(viewYear, viewMonth + 1, 0);
+      const startDay = first.getDay();
+      const totalDays = last.getDate();
+
+      for(let i=0;i<startDay;i++){
+        const cell = document.createElement('div');
+        cell.className = 'rs-day is-empty';
+        calGrid.appendChild(cell);
+      }
+
+      for(let d=1; d<=totalDays; d++){
+        const dateObj = new Date(viewYear, viewMonth, d);
+        dateObj.setHours(0,0,0,0);
+        const iso = toISODate(dateObj);
+
+        const cell = document.createElement('button');
+        cell.type = 'button';
+        cell.className = 'rs-day';
+        cell.setAttribute('role','gridcell');
+        cell.setAttribute('aria-label', iso);
+        cell.textContent = d;
+
+        const inPast = dateObj < today;
+        if(inPast){
+          cell.classList.add('is-off');
+          cell.disabled = true;
+        }else{
+          cell.addEventListener('click', function(){
+            setActiveDay(iso);
+          });
+        }
+
+        calGrid.appendChild(cell);
+      }
+
+      renderCalendarBadges();
+    }
+
+    function renderCalendarBadges(){
+      const dayCount = {};
+      selectedSlots.forEach(s=>{
+        const d = s.split('T')[0];
+        dayCount[d] = (dayCount[d] || 0) + 1;
+      });
+
+      Array.from(calGrid.querySelectorAll('.rs-day')).forEach(btn=>{
+        const iso = btn.getAttribute('aria-label');
+        if(!iso) return;
+
+        btn.classList.remove('is-selected');
+        const old = btn.querySelector('.rs-dayBadge');
+        if(old) old.remove();
+
+        const c = dayCount[iso] || 0;
+        if(c > 0){
+          btn.classList.add('is-selected');
+          const b = document.createElement('div');
+          b.className = 'rs-dayBadge';
+          b.textContent = c;
+          btn.appendChild(b);
+        }
+      });
+    }
+
+    function showTimeStage(){
+      if(calGrid) calGrid.style.display = 'none';
+      if(timeStage){
+        timeStage.style.display = '';
+        timeStage.setAttribute('aria-hidden','false');
+      }
+    }
+
+    function hideTimeStage(){
+      activeDayISO = "";
+      if(timeStage){
+        timeStage.style.display = 'none';
+        timeStage.setAttribute('aria-hidden','true');
+      }
+      if(calGrid) calGrid.style.display = '';
+      if(timeGridTitle) timeGridTitle.textContent = "Pick a time";
+      if(toast){
+        toast.style.display = 'none';
+        toast.innerHTML = '';
+      }
+      if(timeGrid) timeGrid.innerHTML = '';
+    }
+
+    function buildTimeGrid(){
+      const startHour = 8;
+      const endHour = 18;
+      const step = 15;
+
+      const times = [];
+      for(let h = startHour; h < endHour; h++){
+        for(let m = 0; m < 60; m += step){
+          times.push(`${pad2(h)}:${pad2(m)}`);
+        }
+      }
+
+      timeGrid.innerHTML = times.map(t=>{
+        const slot = activeDayISO ? `${activeDayISO}T${t}` : '';
+        const picked = slot && selectedSlots.includes(slot);
+        return `<button type="button" class="rs-timeBtn ${picked ? 'is-picked':''}" data-time="${t}">
+          <i class="fa-regular fa-clock"></i> ${toNiceTime(t)}
+        </button>`;
+      }).join('');
+    }
+
+    function setActiveDay(isoDate){
+      activeDayISO = isoDate;
+      showTimeStage();
+      if(timeGridTitle) timeGridTitle.textContent = `Times for ${toNiceDate(isoDate)}`;
+      if(toast){
+        toast.style.display = 'none';
+        toast.innerHTML = '';
+      }
+      buildTimeGrid();
+      pulseCalendar();
+    }
+
+    function flashToast(msg){
+      if(!toast) return;
+      toast.innerHTML = `<i class="fa-solid fa-circle-check"></i> <div>${msg}</div>`;
+      toast.style.display = 'flex';
+      setTimeout(()=>{
+        toast.style.display = 'none';
+      }, 2200);
+    }
+
+function addSlot(timeHHMM){
+  if(!activeDayISO || !timeHHMM) return;
+  const slot = `${activeDayISO}T${timeHHMM}`;
+
+  if(selectedSlots.includes(slot)){
+    flashToast(`Already added: <strong>${toNiceDate(activeDayISO)}</strong> at <strong>${toNiceTime(timeHHMM)}</strong>. Pick another time.`);
+    return;
+  }
+
+  selectedSlots.push(slot);
+  renderSelectedSlots();
+  renderCalendarBadges();
+
+  // Toast + auto-return to calendar so user can immediately pick another day
+  flashToast(`✓ <strong>${toNiceDate(activeDayISO)}</strong> at <strong>${toNiceTime(timeHHMM)}</strong> added`);
+
+  // Keep the time grid visually responsive in case they stay
+  buildTimeGrid();
+  pulseCalendar();
+
+  // Auto return to calendar after a very short confirmation moment
+  setTimeout(()=>{
+    hideTimeStage();
+    pulseCalendar();
+  }, 900);
+}
+
+
+    // Open listeners
+    document.addEventListener('click', function(e){
+      const btn = e.target.closest('.rs-req11Btn');
+      if(!btn) return;
+
+      e.preventDefault();
+      const memberName = btn.getAttribute('data-member') || '';
+      const bizName = btn.getAttribute('data-biz') || '';
+      openModal(memberName, bizName);
+    });
+
+    // Close behaviors
+    if(closeBtn) closeBtn.addEventListener('click', closeModal);
+    if(cancelBtn) cancelBtn.addEventListener('click', closeModal);
+
+    overlay.addEventListener('click', function(e){
+      if(e.target === overlay) closeModal();
+    });
+
+    document.addEventListener('keydown', function(e){
+      if(!overlay.classList.contains('is-open')) return;
+      if(e.key === 'Escape') closeModal();
+    });
+
+    // Back button
+    if(timeBack){
+      timeBack.addEventListener('click', function(){
+        hideTimeStage();
+        pulseCalendar();
+      });
+    }
+
+    // Meeting type buttons
+    typeBtns.forEach(btn=>{
+      btn.addEventListener('click', function(){
+        const key = btn.getAttribute('data-type') || 'virtual';
+        setMeetingType(key);
+      });
+    });
+
+    // Duration buttons
+    durationBtns.forEach(btn=>{
+      btn.addEventListener('click', function(){
+        const mins = btn.getAttribute('data-duration') || '15';
+        setDuration(mins);
+      });
+    });
+
+    if(builtIn) builtIn.addEventListener('change', toggleVirtualLink);
+
+    // Calendar month nav
+    if(calPrev){
+      calPrev.addEventListener('click', function(){
+        viewMonth--;
+        if(viewMonth < 0){ viewMonth = 11; viewYear--; }
+        renderCalendar();
+      });
+    }
+    if(calNext){
+      calNext.addEventListener('click', function(){
+        viewMonth++;
+        if(viewMonth > 11){ viewMonth = 0; viewYear++; }
+        renderCalendar();
+      });
+    }
+
+    // Time grid click (immediate add)
+    timeGrid.addEventListener('click', function(e){
+      const btn = e.target.closest('button[data-time]');
+      if(!btn) return;
+      const t = btn.getAttribute('data-time');
+      addSlot(t);
+    });
+
+    // Remove chip
+    chipsWrap.addEventListener('click', function(e){
+      const x = e.target.closest('button[data-slot]');
+      if(!x) return;
+      const slot = x.getAttribute('data-slot');
+      const idx = selectedSlots.indexOf(slot);
+      if(idx >= 0) selectedSlots.splice(idx,1);
+
+      renderSelectedSlots();
+      renderCalendarBadges();
+      if(activeDayISO) buildTimeGrid();
+      pulseCalendar();
+    });
+
+    // Clear all slots
+    if(clearBtn){
+      clearBtn.addEventListener('click', function(){
+        clearSlots();
+      });
+    }
+
+    // "Add more times"
+    if(nudgeAddMore){
+      nudgeAddMore.addEventListener('click', function(){
+        if(calWrap){
+          calWrap.scrollIntoView({ behavior:'smooth', block:'center' });
+          pulseCalendar();
+        }
+      });
+    }
+// =========================================================
+// MEETING LOCATION (1-field search + dropdown + Google Maps link)
+// - lightweight "Google-like" suggestions WITHOUT API key
+// - suggestions are generated using Nominatim (OpenStreetMap)
+// - when picked: stores maps_place_label + maps_url
+// =========================================================
+const rsMapSearch = document.getElementById('rsMapSearch');
+const rsMapDropdown = document.getElementById('rsMapDropdown');
+const rsMapPicked = document.getElementById('rsMapPicked');
+const rsMapPickedLink = document.getElementById('rsMapPickedLink');
+const rsMapsPlaceLabel = document.getElementById('rsMapsPlaceLabel');
+const rsMapsUrl = document.getElementById('rsMapsUrl');
+const rsMapClear = document.getElementById('rsMapClear');
+
+let rsMapTimer = null;
+let rsMapAbort = null;
+
+function escHtml(str){
+  return String(str || '')
+    .replace(/&/g,'&amp;')
+    .replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;')
+    .replace(/'/g,'&#039;');
+}
+
+function showMapDropdown(html){
+  if(!rsMapDropdown) return;
+  rsMapDropdown.innerHTML = html || '';
+  rsMapDropdown.style.display = html ? '' : 'none';
+}
+
+function clearPickedLocation(){
+  if(rsMapsPlaceLabel) rsMapsPlaceLabel.value = '';
+  if(rsMapsUrl) rsMapsUrl.value = '';
+  if(rsMapPicked) rsMapPicked.style.display = 'none';
+  if(rsMapPickedLink) rsMapPickedLink.href = '#';
+  if(rsMapClear) rsMapClear.style.display = 'none';
+}
+
+function setPickedLocation(label, mapsUrl){
+  if(rsMapsPlaceLabel) rsMapsPlaceLabel.value = label || '';
+  if(rsMapsUrl) rsMapsUrl.value = mapsUrl || '';
+
+  if(rsMapPickedLink){
+    rsMapPickedLink.textContent = label || 'Open in Google Maps';
+    rsMapPickedLink.href = mapsUrl || '#';
+  }
+  if(rsMapPicked) rsMapPicked.style.display = '';
+  if(rsMapClear) rsMapClear.style.display = '';
+}
+
+async function fetchLocationSuggestions(q){
+  // Abort previous request
+  try{ if(rsMapAbort) rsMapAbort.abort(); }catch(_e){}
+  rsMapAbort = new AbortController();
+
+  // Using Nominatim for a "search-like" experience without Google API key
+  const url = `https://nominatim.openstreetmap.org/search?format=json&addressdetails=1&limit=6&q=${encodeURIComponent(q)}`;
+
+  const res = await fetch(url, {
+    method:'GET',
+    signal: rsMapAbort.signal,
+    headers:{
+      // Nominatim requests a UA/Referer; browser will send Referer automatically
+      'Accept':'application/json'
+    }
+  });
+
+  if(!res.ok) return [];
+  const data = await res.json();
+  if(!Array.isArray(data)) return [];
+
+  return data.map(item=>{
+    const label = item.display_name || '';
+    const lat = item.lat;
+    const lon = item.lon;
+    const gmaps = (lat && lon)
+      ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(lat + ',' + lon)}`
+      : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(label)}`;
+
+    // Create a nicer title/meta split
+    const parts = label.split(',');
+    const title = (parts.shift() || '').trim();
+    const meta = parts.join(',').trim();
+
+    return { title, meta, label, gmaps };
+  });
+}
+
+function bindLocationSearch(){
+  if(!rsMapSearch || !rsMapDropdown) return;
+
+  rsMapSearch.addEventListener('input', function(){
+    const q = (rsMapSearch.value || '').trim();
+
+    // if user is typing again, clear picked values (unless they re-select)
+    clearPickedLocation();
+
+    if(rsMapTimer) clearTimeout(rsMapTimer);
+
+    if(!q || q.length < 3){
+      showMapDropdown('');
+      return;
+    }
+
+    rsMapTimer = setTimeout(async ()=>{
+      try{
+        const items = await fetchLocationSuggestions(q);
+        if(!items.length){
+          showMapDropdown(`<div style="padding:12px;font-weight:700;color:#6B7280;font-size:12.5px;">No locations found</div>`);
+          return;
+        }
+
+        const html = items.map((it, idx)=>`
+          <button type="button" class="rs-mapOption" data-idx="${idx}" data-label="${escHtml(it.label)}" data-url="${escHtml(it.gmaps)}">
+            <div class="rs-mapOptionTitle">${escHtml(it.title || it.label)}</div>
+            ${it.meta ? `<div class="rs-mapOptionMeta">${escHtml(it.meta)}</div>` : ``}
+          </button>
+        `).join('');
+
+        showMapDropdown(html);
+      }catch(err){
+        // ignore aborts
+        showMapDropdown('');
+      }
+    }, 240);
+  });
+
+  // click suggestion
+  rsMapDropdown.addEventListener('click', function(e){
+    const opt = e.target.closest('.rs-mapOption');
+    if(!opt) return;
+
+    const label = opt.getAttribute('data-label') || '';
+    const url = opt.getAttribute('data-url') || '';
+
+    rsMapSearch.value = label;
+    setPickedLocation(label, url);
+    showMapDropdown('');
+    pulseCalendar(); // keeps UI feeling alive/consistent
+  });
+
+  // clear button
+  if(rsMapClear){
+    rsMapClear.addEventListener('click', function(){
+      rsMapSearch.value = '';
+      clearPickedLocation();
+      showMapDropdown('');
+      rsMapSearch.focus();
+    });
+  }
+
+  // close dropdown when clicking elsewhere
+  document.addEventListener('click', function(e){
+    if(!rsMapDropdown || !rsMapSearch) return;
+    if(e.target === rsMapSearch || rsMapDropdown.contains(e.target)) return;
+    showMapDropdown('');
+  });
+}
+
+bindLocationSearch();
+
+    // Form submit
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+
+      if(selectedSlots.length < 2){
+        if(calWrap){
+          calWrap.scrollIntoView({ behavior:'smooth', block:'center' });
+          pulseCalendar();
+        }
+        alert('Please add at least 2 proposed date & time options.');
+        return;
+      }
+
+      if(meetingType === 'virtual' && builtIn && !builtIn.checked){
+        const link = document.getElementById('rsVirtualLink');
+        if(link && !String(link.value || '').trim()){
+          link.focus();
+          alert('Please enter a virtual meeting link, or use the built-in Segwik meeting location.');
+          return;
+        }
+      }
+
+if(meetingType === 'inperson'){
+  const place = document.getElementById('rsMapsPlaceLabel');
+  const url = document.getElementById('rsMapsUrl');
+  const field = document.getElementById('rsMapSearch');
+
+  const ok =
+    (place && place.value.trim()) &&
+    (url && url.value.trim());
+
+  if(!ok){
+    alert('Please select a meeting location from the dropdown.');
+    if(field) field.focus();
+    return;
+  }
+}
+
+
+      const sendBtn = document.getElementById('rsReq11Send');
+      if(sendBtn){
+        const original = sendBtn.innerHTML;
+        sendBtn.disabled = true;
+        sendBtn.innerHTML = `<i class="fa-solid fa-check"></i> Request sent`;
+        setTimeout(()=>{
+          sendBtn.disabled = false;
+          sendBtn.innerHTML = original;
+          closeModal();
+        }, 850);
+      }else{
+        closeModal();
+      }
+    });
+
+  })();
 </script>
+
 
 <!--end-->
 
