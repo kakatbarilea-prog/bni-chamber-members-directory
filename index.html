@@ -1,572 +1,3 @@
-<header class="rs-header" role="banner">
-  <div class="rs-header__inner">
-
-    <!-- Brand / Logo -->
-    <a class="rs-brand" href="https://kakatbarilea-prog.github.io/bni-homepage/" aria-label="BNI Rock Solid Referrals - Home">
-      <img
-        class="rs-brand__logo"
-        src="https://d34hmiuaex7c0.cloudfront.net/6568/uploads/cmaspages/gallery/galleryitem_1759854726598.png"
-        alt="BNI Rock Solid Referrals"
-      />
-    </a>
-
-    <!-- Desktop Nav -->
-    <nav class="rs-nav" aria-label="Primary navigation">
-      <a class="rs-nav__link is-active" href="https://kakatbarilea-prog.github.io/bni-homepage/">Home</a>
-
-      <!-- Dropdown (CSS-only) -->
-      <div class="rs-nav__dropdown">
-        <a class="rs-nav__link rs-nav__dropbtn" href="https://kakatbarilea-prog.github.io/bni-chapter-leadership/" aria-haspopup="true" aria-expanded="false">
-          Our Chapter
-        </a>
-
-        <div class="rs-nav__menu" role="menu" aria-label="Chapter Members">
-          <a role="menuitem" href="https://kakatbarilea-prog.github.io/bni-chapter-leadership/">Chapter Leadership</a>
-          <a role="menuitem" href="https://kakatbarilea-prog.github.io/bni-chamber-members-directory/">Member Directory</a>
-          <a role="menuitem" class="rs-membersOnlyLink" href="https://kakatbarilea-prog.github.io/bni-seek-of-the-week-submissions/">Seeks of the Week</a>
-        </div>
-      </div>
-
-      <!-- UPDATED: Meetings & Events Dropdown -->
-      <div class="rs-nav__dropdown">
-        <a class="rs-nav__link rs-nav__dropbtn" href="https://kakatbarilea-prog.github.io/bni-meetings-and-events" aria-haspopup="true" aria-expanded="false">
-          Meetings &amp; Events
-        </a>
-
-        <div class="rs-nav__menu" role="menu" aria-label="Meetings & Events">
-          <a role="menuitem" href="https://kakatbarilea-prog.github.io/bni-weekly-meetings">Weekly Meetings</a>
-          <a role="menuitem" href="https://kakatbarilea-prog.github.io/bni-upcoming-events">Upcoming Events</a>
-          <a role="menuitem" class="rs-membersOnlyLink" href="https://kakatbarilea-prog.github.io/bni-member-events">Member Promotions &amp; Events</a>
-          <a role="menuitem" class="rs-membersOnlyLink" href="https://kakatbarilea-prog.github.io/bni-post-an-event">Post an Event</a>
-        </div>
-      </div>
-
-      <a class="rs-nav__link" href="https://kakatbarilea-prog.github.io/bni-gallery">Gallery</a>
-      <a class="rs-nav__link" href="https://kakatbarilea-prog.github.io/bni-news">News</a>
-    </nav>
-
-    <!-- Right -->
-    <div class="rs-actions">
-      <a class="rs-btn rs-btn--primary rs-desktopOnly" href="https://kakatbarilea-prog.github.io/bni-member-login" id="rsMemberLoginLink">Member Log-in</a>
-
-      <!-- Mobile menu button (JS toggles panel) -->
-      <button class="rs-iconbtn" id="rsMenuBtn" type="button" aria-label="Open menu" aria-expanded="false">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M4 6h16a1 1 0 1 0 0-2H4a1 1 0 1 0 0 2Zm16 7H4a1 1 0 0 0 0 2h16a1 1 0 1 0 0-2Zm0 7H4a1 1 0 0 0 0 2h16a1 1 0 1 0 0-2Z"/>
-        </svg>
-      </button>
-    </div>
-
-  </div>
-
-  <!-- Mobile Panel -->
-  <div class="rs-mobile" id="rsMobilePanel" hidden>
-    <div class="rs-mobile__inner">
-      <a href="https://kakatbarilea-prog.github.io/bni-homepage/" class="rs-mobile__link">Home</a>
-      <a href="https://kakatbarilea-prog.github.io/bni-chapter-leadership/">Our Chapter — Chapter Leadership</a>
-      <a href="https://kakatbarilea-prog.github.io/bni-chamber-members-directory/" class="rs-mobile__link">Our Chapter — Member Directory</a>
-      <a href="https://kakatbarilea-prog.github.io/bni-seek-of-the-week-submissions/" class="rs-mobile__link rs-membersOnlyLink">Chapter Members — Seeks of the Week</a>
-
-      <!-- UPDATED: Meetings & Events children in mobile -->
-      <a href="https://kakatbarilea-prog.github.io/bni-weekly-meetings" class="rs-mobile__link">Meetings &amp; Events — Weekly Meetings</a>
-      <a href="https://kakatbarilea-prog.github.io/bni-upcoming-events" class="rs-mobile__link">Meetings &amp; Events — Upcoming Events</a>
-      <a href="https://kakatbarilea-prog.github.io/bni-member-events" class="rs-mobile__link rs-membersOnlyLink">Meetings &amp; Events — Member Promotions &amp; Events</a>
-      <a href="https://kakatbarilea-prog.github.io/bni-post-an-event" class="rs-mobile__link rs-membersOnlyLink">Meetings &amp; Events — Post an Event</a>
-
-      <a href="https://kakatbarilea-prog.github.io/bni-gallery" class="rs-mobile__link">Gallery</a>
-      <a href="https://kakatbarilea-prog.github.io/bni-news" class="rs-mobile__link">News</a>
-
-      <div class="rs-mobile__cta">
-        <a class="rs-btn rs-btn--primary rs-btn--block" href="https://kakatbarilea-prog.github.io/bni-member-login" id="rsMemberLoginLinkMobile">Member Log-in</a>
-      </div>
-    </div>
-  </div>
-</header>
-
-<!-- MEMBERS ONLY POPUP (HEADER VERSION) -->
-<div class="rsH-membersModal" id="rsHMembersModal" hidden aria-hidden="true">
-  <div class="rsH-membersModal__backdrop" data-close="1"></div>
-
-  <div class="rsH-membersModal__card" role="dialog" aria-modal="true" aria-label="Members only">
-    <div class="rsH-membersModal__badge">Members Only</div>
-    <div class="rsH-membersModal__title">This page is available to chapter members.</div>
-    <div class="rsH-membersModal__text">
-      Please log in to access member pages such as Seeks, Member Events, and Event Submissions.
-    </div>
-
-    <div class="rsH-membersModal__actions">
-      <button class="rsH-membersModal__btn rsH-membersModal__btn--secondary" type="button" data-close="1">
-        Close &amp; Continue
-      </button>
-      <a class="rsH-membersModal__btn rsH-membersModal__btn--primary" href="https://kakatbarilea-prog.github.io/bni-member-login" id="rsHModalLoginBtn">
-        Member Log-in
-      </a>
-    </div>
-  </div>
-</div>
-
-<style>
-  /* -------- HEADER ONLY VARIABLES (scoped) -------- */
-  .rs-header{
-    --rs-red:#CF2030;
-    --rs-redDark:#b61b29;
-    --rs-ink:#111827;
-    --rs-line:#E5E7EB;
-    --rs-bg: rgba(255,255,255,.92);
-    --rs-shadow: 0 10px 26px rgba(0,0,0,.10);
-    --rs-h: 78px;
-  }
-
-  /* Scope all typography + box sizing to header only */
-  .rs-header, .rs-header *{
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing:border-box;
-  }
-
-  .rs-header{
-    position:sticky; top:0; z-index:999;
-    width:100%;
-    background: var(--rs-bg);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(229,231,235,.95);
-  }
-
-  .rs-header__inner{
-    width:100%;
-    height:var(--rs-h);
-    padding:0 26px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:18px;
-  }
-
-  .rs-brand{
-    display:flex;
-    align-items:center;
-    text-decoration:none;
-    flex:0 0 auto;
-  }
-
-  /* Prevent stretch */
-  .rs-brand__logo{
-    height:40px;
-    width:auto;
-    max-width:220px;
-    object-fit:contain;
-    display:block;
-  }
-
-  .rs-nav{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:6px;
-    flex:1;
-    min-width:0;
-  }
-
-  .rs-nav__link{
-    display:inline-flex;
-    align-items:center;
-    padding:10px 12px;
-    border-radius:12px;
-    font-weight:600;
-    font-size:14px;
-    color:var(--rs-ink);
-    text-decoration:none;
-    white-space:nowrap;
-    transition:.15s ease;
-  }
-  .rs-nav__link:hover{background:#F6F7FB}
-
-  .rs-nav__link.is-active{position:relative}
-  .rs-nav__link.is-active::after{
-    content:"";
-    position:absolute;
-    left:12px; right:12px; bottom:6px;
-    height:2px;
-    border-radius:999px;
-    background:var(--rs-red);
-  }
-
-  /* Dropdown (CSS-only) with hover bridge */
-  .rs-nav__dropdown{position:relative}
-  .rs-nav__dropbtn{cursor:default}
-
-  .rs-nav__menu{
-    position:absolute;
-    top:100%;
-    left:0;
-    margin-top:8px;
-    min-width:240px;
-    background:#fff;
-    border:1px solid var(--rs-line);
-    border-radius:14px;
-    box-shadow:var(--rs-shadow);
-    padding:8px;
-    display:none;
-    z-index:50;
-  }
-
-  .rs-nav__dropdown::before{
-    content:"";
-    position:absolute;
-    left:0;
-    top:100%;
-    width:260px;
-    height:18px;
-    background:transparent;
-    display:none;
-    z-index:40;
-  }
-
-  .rs-nav__menu a{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:12px;
-    padding:11px 12px;
-    border-radius:12px;
-    font-weight:600;
-    font-size:14px;
-    color:var(--rs-ink);
-    text-decoration:none;
-    transition:.15s ease;
-  }
-  .rs-nav__menu a:hover{background:#F6F7FB}
-
-  .rs-nav__dropdown:hover .rs-nav__menu,
-  .rs-nav__dropdown:focus-within .rs-nav__menu{
-    display:block;
-  }
-  .rs-nav__dropdown:hover::before,
-  .rs-nav__dropdown:focus-within::before{
-    display:block;
-  }
-
-  .rs-actions{
-    display:flex;
-    align-items:center;
-    justify-content:flex-end;
-    gap:10px;
-    flex:0 0 auto;
-  }
-
-  /* Button with hover animation */
-  .rs-btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    padding:11px 16px;
-    border-radius:12px;
-    border:1px solid var(--rs-line);
-    background:#fff;
-    font-weight:600;
-    font-size:14px;
-    color:var(--rs-ink);
-    text-decoration:none;
-    white-space:nowrap;
-    position:relative;
-    overflow:hidden;
-    transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
-  }
-
-  .rs-btn--primary{
-    border-color:transparent;
-    background:var(--rs-red);
-    color:#fff;
-  }
-
-  .rs-btn--primary::after{
-    content:"";
-    position:absolute;
-    top:-30%;
-    left:-60%;
-    width:40%;
-    height:160%;
-    transform: rotate(20deg);
-    background: rgba(255,255,255,.25);
-    opacity:0;
-    transition: opacity .2s ease;
-  }
-
-  .rs-btn--primary:hover{
-    transform: translateY(-1px);
-    box-shadow: 0 10px 18px rgba(0,0,0,.14);
-    filter: brightness(.98);
-  }
-  .rs-btn--primary:hover::after{
-    opacity:1;
-    animation: rsSheen .9s ease forwards;
-  }
-
-  @keyframes rsSheen{
-    0%{left:-60%}
-    100%{left:120%}
-  }
-
-  .rs-desktopOnly{display:inline-flex}
-
-  /* Mobile hamburger */
-  .rs-iconbtn{
-    width:44px;height:44px;
-    border-radius:12px;
-    border:1px solid var(--rs-line);
-    background:#fff;
-    display:none;
-    align-items:center;
-    justify-content:center;
-    cursor:pointer;
-    transition: transform .18s ease, box-shadow .18s ease;
-  }
-  .rs-iconbtn:hover{
-    transform: translateY(-1px);
-    box-shadow: 0 10px 18px rgba(0,0,0,.10);
-  }
-  .rs-iconbtn svg{width:20px;height:20px; fill:#111827; display:block}
-
-  /* Mobile panel */
-  .rs-mobile{
-    border-top:1px solid var(--rs-line);
-    background:#fff;
-  }
-  .rs-mobile__inner{
-    padding:14px 18px 18px;
-    display:flex;
-    flex-direction:column;
-    gap:10px;
-  }
-  .rs-mobile__link{
-    padding:12px 12px;
-    border-radius:12px;
-    font-weight:600;
-    background:#F7F7FA;
-    border:1px solid #EEF0F6;
-    text-decoration:none;
-    color:var(--rs-ink);
-    transition:.15s ease;
-  }
-  .rs-mobile__link:hover{background:#F1F3F8}
-  .rs-mobile__cta{padding-top:6px}
-  .rs-btn--block{width:100%}
-
-  @media (max-width: 980px){
-    .rs-nav{display:none}
-    .rs-iconbtn{display:inline-flex}
-    .rs-desktopOnly{display:none}
-    .rs-header__inner{padding:0 16px}
-    .rs-brand__logo{height:36px; max-width:180px;}
-  }
-
-  @media (max-width: 420px){
-    .rs-header{--rs-h:72px}
-    .rs-brand__logo{max-width:150px;}
-  }
-
-  /* =========================
-     HEADER MODAL (unique classes so nothing overrides it)
-  ========================= */
-  .rsH-membersModal{
-    position:fixed;
-    inset:0;
-    z-index:5000;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:18px;
-  }
-  .rsH-membersModal[hidden]{display:none !important;}
-
-  .rsH-membersModal__backdrop{
-    position:absolute;
-    inset:0;
-    background: rgba(17,24,39,.62);
-    backdrop-filter: blur(4px);
-  }
-
-  .rsH-membersModal__card{
-    position:relative;
-    width:100%;
-    max-width:420px;
-    border-radius:20px;
-    border:1px solid rgba(229,231,235,.55);
-    background:#fff;
-    box-shadow: 0 22px 56px rgba(0,0,0,.22);
-    padding:18px 18px 16px;
-    text-align:left;
-  }
-
-  .rsH-membersModal__badge{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    padding:8px 12px;
-    border-radius:999px;
-    font-weight:900;
-    font-size:12px;
-    letter-spacing:.02em;
-    color:#CF2030;
-    background: rgba(207,32,48,.10);
-    border: 1px solid rgba(207,32,48,.18);
-    margin-bottom:12px;
-  }
-
-  .rsH-membersModal__title{
-    font-size:16px;
-    font-weight:900;
-    color:#111827;
-    margin-bottom:8px;
-  }
-
-  .rsH-membersModal__text{
-    font-size:14px;
-    line-height:1.6;
-    color:#4B5563;
-    margin-bottom:14px;
-  }
-
-  .rsH-membersModal__actions{
-    display:flex;
-    gap:10px;
-    flex-wrap:wrap;
-    margin-top:8px;
-  }
-
-  .rsH-membersModal__btn{
-    display:inline-flex !important;
-    align-items:center !important;
-    justify-content:center !important;
-    gap:8px !important;
-    padding:11px 14px !important;
-    border-radius:14px !important;
-    font-weight:900 !important;
-    font-size:13px !important;
-    text-decoration:none !important;
-    cursor:pointer !important;
-    border:1px solid #E5E7EB !important;
-    transition:.18s ease !important;
-    flex:1 !important;
-    min-width:160px !important;
-    line-height:1 !important;
-  }
-
-  .rsH-membersModal__btn:hover{
-    transform: translateY(-1px);
-    box-shadow: 0 12px 22px rgba(0,0,0,.12);
-  }
-
-  .rsH-membersModal__btn--secondary{
-    background:#F3F4F6 !important;
-    color:#111827 !important;
-    border-color:#E5E7EB !important;
-  }
-
-  /* ✅ HARD FIX: anchor login button forced red + white */
-  .rsH-membersModal__btn--primary,
-  a.rsH-membersModal__btn--primary,
-  a#rsHModalLoginBtn{
-    background:#CF2030 !important;
-    color:#ffffff !important;
-    border-color:transparent !important;
-  }
-  .rsH-membersModal__btn--primary:hover,
-  a.rsH-membersModal__btn--primary:hover,
-  a#rsHModalLoginBtn:hover{
-    background:#b61b29 !important;
-    color:#ffffff !important;
-  }
-
-  @media (max-width: 520px){
-    .rsH-membersModal__btn{
-      width:100%;
-      min-width:unset;
-      flex: 1 1 100%;
-    }
-  }
-</style>
-
-<script>
-  /* Minimal / necessary only: mobile hamburger open/close */
-  (function(){
-    const btn = document.getElementById('rsMenuBtn');
-    const panel = document.getElementById('rsMobilePanel');
-    if(!btn || !panel) return;
-
-    function close(){
-      panel.setAttribute('hidden','');
-      btn.setAttribute('aria-expanded','false');
-    }
-
-    btn.addEventListener('click', () => {
-      const isHidden = panel.hasAttribute('hidden');
-      if(isHidden){
-        panel.removeAttribute('hidden');
-        btn.setAttribute('aria-expanded','true');
-      }else{
-        close();
-      }
-    });
-
-    panel.addEventListener('click', (e) => {
-      if(e.target && e.target.tagName === 'A') close();
-    });
-
-    window.addEventListener('resize', () => {
-      if(window.innerWidth > 980) close();
-    });
-  })();
-
-  // HEADER MODAL GATING
-  (function(){
-    const modal = document.getElementById('rsHMembersModal');
-    if(!modal) return;
-
-    const loginHref =
-      (document.getElementById('rsMemberLoginLink') && document.getElementById('rsMemberLoginLink').getAttribute('href')) ||
-      (document.getElementById('rsMemberLoginLinkMobile') && document.getElementById('rsMemberLoginLinkMobile').getAttribute('href')) ||
-      '#';
-
-    const modalLoginBtn = document.getElementById('rsHModalLoginBtn');
-    if(modalLoginBtn) modalLoginBtn.setAttribute('href', loginHref);
-
-    modal.setAttribute('hidden','');
-    modal.setAttribute('aria-hidden','true');
-
-    function openModal(){
-      modal.removeAttribute('hidden');
-      modal.setAttribute('aria-hidden','false');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeModal(){
-      modal.setAttribute('hidden','');
-      modal.setAttribute('aria-hidden','true');
-      document.body.style.overflow = '';
-    }
-
-    document.addEventListener('click', function(e){
-      const gated = e.target.closest('.rs-membersOnlyLink');
-      if(!gated) return;
-      e.preventDefault();
-      openModal();
-    });
-
-    modal.addEventListener('click', function(e){
-      if(e.target && e.target.getAttribute('data-close') === '1') closeModal();
-    });
-
-    document.addEventListener('keydown', function(e){
-      if(e.key === 'Escape' && !modal.hasAttribute('hidden')) closeModal();
-    });
-  })();
-</script>
-
-
-
-
-<!--start-->
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
 <main class="rs-dir">
@@ -684,125 +115,165 @@
 
       <div class="rs-dirGrid" id="rsDirGrid">
 
-        <!-- 1 -->
-        <article class="rs-memberCard" data-category="home" data-search="Arik R. Sevy Sevys Electrical LLC electrician electrical central nj">
-          <img class="rs-headshot" alt="Arik R. Sevy"
-               src="https://drive.google.com/uc?export=view&id=1lvywtjJwnqDYwM_o-xgtVhoVtW47Pt1p">
-          <div class="rs-memberBody">
-            <div class="rs-memberName">Arik R. Sevy</div>
-            <div class="rs-memberBiz">Sevys Electrical LLC</div>
-            <div class="rs-memberActions">
-              <a class="rs-miniBtn rs-miniBtn--muted rs-req11Btn" href="#" data-member="Arik R. Sevy" data-biz="Sevys Electrical LLC"><i class="fa-solid fa-handshake"></i> Request a 1-to-1</a>
-              <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-paper-plane"></i> Share a referral</a>
-              <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
-            </div>
-          </div>
-        </article>
+ <!-- 1 -->
+<article class="rs-memberCard" data-category="home" data-search="Arik R. Sevy Sevys Electrical LLC electrician electrical central nj">
+  <img class="rs-headshot" alt="Arik R. Sevy"
+       src="https://drive.google.com/uc?export=view&id=1lvywtjJwnqDYwM_o-xgtVhoVtW47Pt1p">
+  <div class="rs-memberBody">
+    <div class="rs-memberName">Arik R. Sevy</div>
+    <div class="rs-memberBiz">Sevys Electrical LLC</div>
+    <div class="rs-memberActions">
+      <a class="rs-miniBtn rs-miniBtn--muted rs-req11Btn" href="#" data-member="Arik R. Sevy" data-biz="Sevys Electrical LLC">
+        <i class="fa-solid fa-handshake"></i> Request a 1-to-1
+      </a>
+      <a class="rs-miniBtn rs-miniBtn--muted rs-shareRefBtn" href="#"
+         data-member="Arik R. Sevy" data-biz="Sevys Electrical LLC">
+        <i class="fa-solid fa-paper-plane"></i> Share a referral
+      </a>
+      <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
+    </div>
+  </div>
+</article>
 
-        <!-- 2 -->
-        <article class="rs-memberCard" data-category="health" data-search="Bridgete Ervin-Furnari Senior Care Authority elder care senior care monmouth">
-          <img class="rs-headshot" alt="Bridgete Ervin-Furnari"
-               src="https://drive.google.com/uc?export=view&id=1FRUbs9BPDFjGiZxxGrKb3Kmww6gqv9iT">
-          <div class="rs-memberBody">
-            <div class="rs-memberName">Bridgete Ervin-Furnari</div>
-            <div class="rs-memberBiz">Senior Care Authority</div>
-            <div class="rs-memberActions">
-              <a class="rs-miniBtn rs-miniBtn--muted rs-req11Btn" href="#" data-member="Bridgete Ervin-Furnari" data-biz="Senior Care Authority"><i class="fa-solid fa-handshake"></i> Request a 1-to-1</a>
-              <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-paper-plane"></i> Share a referral</a>
-              <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
-            </div>
-          </div>
-        </article>
+<!-- 2 -->
+<article class="rs-memberCard" data-category="health" data-search="Bridgete Ervin-Furnari Senior Care Authority elder care senior care monmouth">
+  <img class="rs-headshot" alt="Bridgete Ervin-Furnari"
+       src="https://drive.google.com/uc?export=view&id=1FRUbs9BPDFjGiZxxGrKb3Kmww6gqv9iT">
+  <div class="rs-memberBody">
+    <div class="rs-memberName">Bridgete Ervin-Furnari</div>
+    <div class="rs-memberBiz">Senior Care Authority</div>
+    <div class="rs-memberActions">
+      <a class="rs-miniBtn rs-miniBtn--muted rs-req11Btn" href="#" data-member="Bridgete Ervin-Furnari" data-biz="Senior Care Authority">
+        <i class="fa-solid fa-handshake"></i> Request a 1-to-1
+      </a>
+      <a class="rs-miniBtn rs-miniBtn--muted rs-shareRefBtn" href="#"
+         data-member="Bridgete Ervin-Furnari" data-biz="Senior Care Authority">
+        <i class="fa-solid fa-paper-plane"></i> Share a referral
+      </a>
+      <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
+    </div>
+  </div>
+</article>
 
-        <!-- 3 -->
-        <article class="rs-memberCard" data-category="business" data-search="Cary Zackman City Lifestyle marketing magazine media central nj">
-          <img class="rs-headshot" alt="Cary Zackman"
-               src="https://drive.google.com/uc?export=view&id=1a6g7mpN1ovFOe7ryhmhMT1xiPLL6e2qX">
-          <div class="rs-memberBody">
-            <div class="rs-memberName">Cary Zackman</div>
-            <div class="rs-memberBiz">City Lifestyle</div>
-            <div class="rs-memberActions">
-              <a class="rs-miniBtn rs-miniBtn--muted rs-req11Btn" href="#" data-member="Cary Zackman" data-biz="City Lifestyle"><i class="fa-solid fa-handshake"></i> Request a 1-to-1</a>
-              <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-paper-plane"></i> Share a referral</a>
-              <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
-            </div>
-          </div>
-        </article>
+<!-- 3 -->
+<article class="rs-memberCard" data-category="business" data-search="Cary Zackman City Lifestyle marketing magazine media central nj">
+  <img class="rs-headshot" alt="Cary Zackman"
+       src="https://drive.google.com/uc?export=view&id=1a6g7mpN1ovFOe7ryhmhMT1xiPLL6e2qX">
+  <div class="rs-memberBody">
+    <div class="rs-memberName">Cary Zackman</div>
+    <div class="rs-memberBiz">City Lifestyle</div>
+    <div class="rs-memberActions">
+      <a class="rs-miniBtn rs-miniBtn--muted rs-req11Btn" href="#" data-member="Cary Zackman" data-biz="City Lifestyle">
+        <i class="fa-solid fa-handshake"></i> Request a 1-to-1
+      </a>
+      <a class="rs-miniBtn rs-miniBtn--muted rs-shareRefBtn" href="#"
+         data-member="Cary Zackman" data-biz="City Lifestyle">
+        <i class="fa-solid fa-paper-plane"></i> Share a referral
+      </a>
+      <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
+    </div>
+  </div>
+</article>
 
-        <!-- 4 -->
-        <article class="rs-memberCard" data-category="health" data-search="Craig Leavitt Coastal Chiropractic Center chiropractor wellness">
-          <img class="rs-headshot" alt="Craig Leavitt"
-               src="https://drive.google.com/uc?export=view&id=1-wFNyE8btkxxFtncH8X5HLYyQhkXyJc0">
-          <div class="rs-memberBody">
-            <div class="rs-memberName">Craig Leavitt</div>
-            <div class="rs-memberBiz">Coastal Chiropractic Center</div>
-            <div class="rs-memberActions">
-              <a class="rs-miniBtn rs-miniBtn--muted rs-req11Btn" href="#" data-member="Craig Leavitt" data-biz="Coastal Chiropractic Center"><i class="fa-solid fa-handshake"></i> Request a 1-to-1</a>
-              <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-paper-plane"></i> Share a referral</a>
-              <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
-            </div>
-          </div>
-        </article>
+<!-- 4 -->
+<article class="rs-memberCard" data-category="health" data-search="Craig Leavitt Coastal Chiropractic Center chiropractor wellness">
+  <img class="rs-headshot" alt="Craig Leavitt"
+       src="https://drive.google.com/uc?export=view&id=1-wFNyE8btkxxFtncH8X5HLYyQhkXyJc0">
+  <div class="rs-memberBody">
+    <div class="rs-memberName">Craig Leavitt</div>
+    <div class="rs-memberBiz">Coastal Chiropractic Center</div>
+    <div class="rs-memberActions">
+      <a class="rs-miniBtn rs-miniBtn--muted rs-req11Btn" href="#" data-member="Craig Leavitt" data-biz="Coastal Chiropractic Center">
+        <i class="fa-solid fa-handshake"></i> Request a 1-to-1
+      </a>
+      <a class="rs-miniBtn rs-miniBtn--muted rs-shareRefBtn" href="#"
+         data-member="Craig Leavitt" data-biz="Coastal Chiropractic Center">
+        <i class="fa-solid fa-paper-plane"></i> Share a referral
+      </a>
+      <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
+    </div>
+  </div>
+</article>
 
-        <!-- 5 -->
-        <article class="rs-memberCard" data-category="home" data-search="Dean White Bee Gone Pest Control pest control exterminator nj">
-          <img class="rs-headshot" alt="Dean White"
-               src="https://drive.google.com/uc?export=view&id=1xY8W_y8eUeNy2b3_xoYg0u3c0cbH5u0C">
-          <div class="rs-memberBody">
-            <div class="rs-memberName">Dean White</div>
-            <div class="rs-memberBiz">Bee Gone Pest Control</div>
-            <div class="rs-memberActions">
-              <a class="rs-miniBtn rs-miniBtn--muted rs-req11Btn" href="#" data-member="Dean White" data-biz="Bee Gone Pest Control"><i class="fa-solid fa-handshake"></i> Request a 1-to-1</a>
-              <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-paper-plane"></i> Share a referral</a>
-              <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
-            </div>
-          </div>
-        </article>
+<!-- 5 -->
+<article class="rs-memberCard" data-category="home" data-search="Dean White Bee Gone Pest Control pest control exterminator nj">
+  <img class="rs-headshot" alt="Dean White"
+       src="https://drive.google.com/uc?export=view&id=1xY8W_y8eUeNy2b3_xoYg0u3c0cbH5u0C">
+  <div class="rs-memberBody">
+    <div class="rs-memberName">Dean White</div>
+    <div class="rs-memberBiz">Bee Gone Pest Control</div>
+    <div class="rs-memberActions">
+      <a class="rs-miniBtn rs-miniBtn--muted rs-req11Btn" href="#" data-member="Dean White" data-biz="Bee Gone Pest Control">
+        <i class="fa-solid fa-handshake"></i> Request a 1-to-1
+      </a>
+      <a class="rs-miniBtn rs-miniBtn--muted rs-shareRefBtn" href="#"
+         data-member="Dean White" data-biz="Bee Gone Pest Control">
+        <i class="fa-solid fa-paper-plane"></i> Share a referral
+      </a>
+      <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
+    </div>
+  </div>
+</article>
 
-        <!-- 6 -->
-        <article class="rs-memberCard">
-          <img class="rs-headshot" alt="Danielle McManus"
-               src="https://drive.google.com/uc?export=view&id=1f8yOcWmY7VwOuk9GLmUQ3hQmZ9JzG4wK">
-          <div class="rs-memberBody">
-            <div class="rs-memberName">Danielle McManus</div>
-            <div class="rs-memberBiz">Chamber Connect</div>
-            <div class="rs-memberActions">
-              <a class="rs-miniBtn rs-miniBtn--muted rs-req11Btn" href="#" data-member="Danielle McManus" data-biz="Chamber Connect"><i class="fa-solid fa-handshake"></i> Request a 1-to-1</a>
-              <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-paper-plane"></i> Share a referral</a>
-              <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
-            </div>
-          </div>
-        </article>
+<!-- 6 -->
+<article class="rs-memberCard">
+  <img class="rs-headshot" alt="Danielle McManus"
+       src="https://drive.google.com/uc?export=view&id=1f8yOcWmY7VwOuk9GLmUQ3hQmZ9JzG4wK">
+  <div class="rs-memberBody">
+    <div class="rs-memberName">Danielle McManus</div>
+    <div class="rs-memberBiz">Chamber Connect</div>
+    <div class="rs-memberActions">
+      <a class="rs-miniBtn rs-miniBtn--muted rs-req11Btn" href="#" data-member="Danielle McManus" data-biz="Chamber Connect">
+        <i class="fa-solid fa-handshake"></i> Request a 1-to-1
+      </a>
+      <a class="rs-miniBtn rs-miniBtn--muted rs-shareRefBtn" href="#"
+         data-member="Danielle McManus" data-biz="Chamber Connect">
+        <i class="fa-solid fa-paper-plane"></i> Share a referral
+      </a>
+      <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
+    </div>
+  </div>
+</article>
 
-        <!-- 7 -->
-        <article class="rs-memberCard">
-          <img class="rs-headshot" alt="Diana McInerney"
-               src="https://drive.google.com/uc?export=view&id=1Po2O4aCz9QvYp8PzGsE_sg8mKcqjv4x1">
-          <div class="rs-memberBody">
-            <div class="rs-memberName">Diana McInerney</div>
-            <div class="rs-memberBiz">Foley Inc.</div>
-            <div class="rs-memberActions">
-              <a class="rs-miniBtn rs-miniBtn--muted rs-req11Btn" href="#" data-member="Diana McInerney" data-biz="Foley Inc."><i class="fa-solid fa-handshake"></i> Request a 1-to-1</a>
-              <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-paper-plane"></i> Share a referral</a>
-              <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
-            </div>
-          </div>
-        </article>
+<!-- 7 -->
+<article class="rs-memberCard">
+  <img class="rs-headshot" alt="Diana McInerney"
+       src="https://drive.google.com/uc?export=view&id=1Po2O4aCz9QvYp8PzGsE_sg8mKcqjv4x1">
+  <div class="rs-memberBody">
+    <div class="rs-memberName">Diana McInerney</div>
+    <div class="rs-memberBiz">Foley Inc.</div>
+    <div class="rs-memberActions">
+      <a class="rs-miniBtn rs-miniBtn--muted rs-req11Btn" href="#" data-member="Diana McInerney" data-biz="Foley Inc.">
+        <i class="fa-solid fa-handshake"></i> Request a 1-to-1
+      </a>
+      <a class="rs-miniBtn rs-miniBtn--muted rs-shareRefBtn" href="#"
+         data-member="Diana McInerney" data-biz="Foley Inc.">
+        <i class="fa-solid fa-paper-plane"></i> Share a referral
+      </a>
+      <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
+    </div>
+  </div>
+</article>
 
-        <!-- 8 -->
-        <article class="rs-memberCard">
-          <img class="rs-headshot" alt="Dylan Goldstein"
-               src="https://drive.google.com/uc?export=view&id=1oX7j2B8m7uQ8G4j8a3qv4Qw2G1zj1H9G">
-          <div class="rs-memberBody">
-            <div class="rs-memberName">Dylan Goldstein</div>
-            <div class="rs-memberBiz">Goldstein Group Communications</div>
-            <div class="rs-memberActions">
-              <a class="rs-miniBtn rs-miniBtn--muted rs-req11Btn" href="#" data-member="Dylan Goldstein" data-biz="Goldstein Group Communications"><i class="fa-solid fa-handshake"></i> Request a 1-to-1</a>
-              <a class="rs-miniBtn rs-miniBtn--muted" href="#"><i class="fa-solid fa-paper-plane"></i> Share a referral</a>
-              <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
-            </div>
-          </div>
-        </article>
+<!-- 8 -->
+<article class="rs-memberCard">
+  <img class="rs-headshot" alt="Dylan Goldstein"
+       src="https://drive.google.com/uc?export=view&id=1oX7j2B8m7uQ8G4j8a3qv4Qw2G1zj1H9G">
+  <div class="rs-memberBody">
+    <div class="rs-memberName">Dylan Goldstein</div>
+    <div class="rs-memberBiz">Goldstein Group Communications</div>
+    <div class="rs-memberActions">
+      <a class="rs-miniBtn rs-miniBtn--muted rs-req11Btn" href="#" data-member="Dylan Goldstein" data-biz="Goldstein Group Communications">
+        <i class="fa-solid fa-handshake"></i> Request a 1-to-1
+      </a>
+      <a class="rs-miniBtn rs-miniBtn--muted rs-shareRefBtn" href="#"
+         data-member="Dylan Goldstein" data-biz="Goldstein Group Communications">
+        <i class="fa-solid fa-paper-plane"></i> Share a referral
+      </a>
+      <a class="rs-btn rs-btn--primary" href="#"><i class="fa-solid fa-id-card"></i>&nbsp; vCard</a>
+    </div>
+  </div>
+</article>
 
       </div>
 
@@ -1042,6 +513,105 @@
   </div>
 </div>
 
+<!-- =========================
+     SHARE A REFERRAL MODAL
+========================= -->
+<div class="rs-refOverlay" id="rsRefOverlay" aria-hidden="true">
+  <div class="rs-refModal" role="dialog" aria-modal="true" aria-labelledby="rsRefTitle">
+
+    <button class="rs-refClose" id="rsRefClose" type="button" aria-label="Close share referral">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <div class="rs-refHead">
+      <div class="rs-refKicker"><i class="fa-solid fa-paper-plane"></i> Referral Share</div>
+      <div class="rs-refTitleRow">
+        <h2 class="rs-refTitle" id="rsRefTitle">Share a referral</h2>
+      </div>
+      <div class="rs-refSub" id="rsRefSub">
+        Send a referral lead directly to the member.
+      </div>
+    </div>
+
+    <div class="rs-refBody" id="rsRefBody">
+      <form class="rs-refForm" id="rsRefForm">
+
+        <div class="rs-refGrid">
+
+          <div class="rs-refBlock">
+            <div class="rs-refLabel">Referral details</div>
+
+            <div class="rs-refGrid2">
+              <div class="rs-refField">
+                <label class="rs-refFieldLabel" for="rsRefFirst">First name <span class="rs-refReq">*</span></label>
+                <input class="rs-refInput" id="rsRefFirst" name="first_name" type="text" required>
+              </div>
+
+              <div class="rs-refField">
+                <label class="rs-refFieldLabel" for="rsRefLast">Last name</label>
+                <input class="rs-refInput" id="rsRefLast" name="last_name" type="text">
+              </div>
+            </div>
+
+            <div class="rs-refGrid2">
+              <div class="rs-refField">
+                <label class="rs-refFieldLabel" for="rsRefPhone">Phone</label>
+                <input class="rs-refInput" id="rsRefPhone" name="phone" type="tel" placeholder="(555) 555-5555">
+              </div>
+
+              <div class="rs-refField">
+                <label class="rs-refFieldLabel" for="rsRefEmail">Email <span class="rs-refReq">*</span></label>
+                <input class="rs-refInput" id="rsRefEmail" name="email" type="email" required>
+              </div>
+            </div>
+
+            <div class="rs-refGrid2">
+              <div class="rs-refField">
+                <label class="rs-refFieldLabel" for="rsRefCompany">Company</label>
+                <input class="rs-refInput" id="rsRefCompany" name="company" type="text">
+              </div>
+
+              <div class="rs-refField">
+                <label class="rs-refFieldLabel" for="rsRefWebsite">Website</label>
+                <input class="rs-refInput" id="rsRefWebsite" name="website" type="url" placeholder="https://">
+              </div>
+            </div>
+
+            <div class="rs-refField">
+              <label class="rs-refFieldLabel" for="rsRefTitleField">Title</label>
+              <input class="rs-refInput" id="rsRefTitleField" name="title" type="text" placeholder="Owner / Manager / Director...">
+            </div>
+
+            <div class="rs-refField" style="margin-top:10px;">
+              <label class="rs-refFieldLabel" for="rsRefNotes">Notes</label>
+              <textarea class="rs-refTextarea" id="rsRefNotes" name="notes" rows="5"
+                placeholder="Add helpful context — what they need, urgency, budget, best time to call, etc."></textarea>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="rs-refFooter">
+          <div class="rs-refFootMeta">
+            <i class="fa-solid fa-lock"></i> This is shared only with the recipient.
+          </div>
+
+          <div class="rs-refFootBtns">
+            <button class="rsRef-btn rsRef-btn--ghost" id="rsRefCancel" type="button">Cancel</button>
+            <button class="rsRef-btn rsRef-btn--primary" id="rsRefSend" type="submit">
+              <i class="fa-solid fa-paper-plane"></i> Send referral
+            </button>
+          </div>
+        </div>
+
+        <input type="hidden" name="to_member" id="rsRefToMember" value="">
+        <input type="hidden" name="to_business" id="rsRefToBiz" value="">
+
+      </form>
+    </div>
+
+  </div>
+</div>
 
 <style>
   /* =========================================================
@@ -1997,6 +1567,212 @@
     .rs-req11FootBtns{ width:100%; }
     .rs-req11Modal button.rs11-btn{ width:100% !important; }
   }
+
+/* =========================================================
+   SHARE REFERRAL MODAL (same design language as 1-to-1 modal)
+========================================================= */
+.rs-refOverlay{
+  position:fixed; inset:0;
+  background: rgba(17,24,39,.56);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:22px;
+  z-index:9999;
+  font-family:"Segoe UI", Arial, Helvetica, sans-serif;
+}
+.rs-refOverlay.is-open{ display:flex; animation: rsFadeIn .18s ease; }
+
+.rs-refModal{
+  width:min(860px, 100%);
+  max-height: calc(100vh - 44px);
+  border-radius:22px;
+  background:#fff;
+  border:1px solid rgba(17,24,39,.10);
+  box-shadow: 0 22px 60px rgba(0,0,0,.28);
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  transform: translateY(8px) scale(.99);
+  opacity:0;
+  animation: rsModalIn .22s ease forwards;
+}
+
+.rs-refClose{
+  position:absolute; right:14px; top:14px;
+  width:42px; height:42px; border-radius:14px;
+  border:1px solid rgba(17,24,39,.10);
+  background: rgba(17,24,39,.04);
+  color:#111827;
+  cursor:pointer;
+  display:flex; align-items:center; justify-content:center;
+  transition:.18s ease;
+  z-index:3;
+  font-family:inherit;
+  font-weight:600;
+}
+.rs-refClose:hover{ transform: translateY(-1px); box-shadow:0 14px 26px rgba(0,0,0,.14); }
+
+.rs-refHead{
+  padding:18px 18px 14px;
+  background:
+    radial-gradient(880px 300px at 10% 0%, rgba(207,32,48,.12), rgba(255,255,255,0) 60%),
+    radial-gradient(900px 320px at 90% 0%, rgba(17,24,39,.06), rgba(255,255,255,0) 55%),
+    linear-gradient(180deg, #fff, #FBFBFD);
+  border-bottom:1px solid rgba(17,24,39,.08);
+  flex:0 0 auto;
+}
+.rs-refKicker{
+  display:inline-flex; gap:8px; align-items:center;
+  padding:7px 10px;
+  border-radius:999px;
+  background: rgba(207,32,48,.10);
+  color: var(--rs-red);
+  border:1px solid rgba(207,32,48,.14);
+  font-weight:700;
+  font-size:12px;
+}
+.rs-refTitleRow{ margin-top:10px; display:flex; justify-content:space-between; align-items:flex-end; gap:12px; flex-wrap:wrap; }
+.rs-refTitle{ margin:0; font-size:24px; letter-spacing:-.02em; line-height:1.12; font-weight:700; }
+.rs-refSub{ margin-top:8px; color:#4B5563; font-size:13px; line-height:1.6; font-weight:400; }
+
+.rs-refBody{ overflow:auto; padding:0; flex: 1 1 auto; }
+.rs-refForm{ padding:16px 18px 16px; display:flex; flex-direction:column; gap:14px; min-height: 100%; }
+
+.rs-refGrid{ display:flex; flex-direction:column; gap:14px; }
+
+.rs-refBlock{
+  border:1px solid rgba(17,24,39,.10);
+  border-radius:18px;
+  background: linear-gradient(180deg, #fff, #FBFBFD);
+  padding:14px;
+  box-shadow: 0 10px 20px rgba(0,0,0,.05);
+}
+.rs-refLabel{ font-weight:700; font-size:13px; margin-bottom:10px; letter-spacing:-.01em; }
+
+.rs-refField{ display:flex; flex-direction:column; gap:6px; }
+.rs-refFieldLabel{ font-weight:600; font-size:12px; color:#374151; }
+
+.rs-refInput, .rs-refTextarea{
+  width:90%;
+  border:1px solid rgba(17,24,39,.12);
+  border-radius:16px;
+  padding:12px 12px;
+  font-size:13.5px;
+  outline:none;
+  transition:.18s ease;
+  background:#fff;
+  font-family:inherit;
+  font-weight:400;
+}
+.rs-refTextarea{ resize:vertical; min-height:140px; }
+.rs-refInput:focus, .rs-refTextarea:focus{
+  border-color: rgba(207,32,48,.28);
+  box-shadow: 0 14px 28px rgba(207,32,48,.10);
+}
+
+.rs-refGrid2{ display:grid; grid-template-columns: 1fr 1fr; gap:10px; }
+
+.rs-refReq{
+  color: var(--rs-red);
+  font-weight:800;
+  margin-left:4px;
+}
+
+.rs-refFooter{
+  position: sticky;
+  bottom: 0;
+  z-index: 2;
+  margin-top: 2px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+  padding:12px 12px;
+  border-radius:18px;
+  border:1px solid rgba(17,24,39,.10);
+  background: linear-gradient(180deg, #fff, #FBFBFD);
+  box-shadow: 0 10px 20px rgba(0,0,0,.06);
+}
+.rs-refFootMeta{
+  color:#6B7280;
+  font-size:12.5px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:600;
+}
+.rs-refFootBtns{ display:flex; gap:10px; flex-wrap:wrap; margin-left:auto; }
+
+/* Buttons match the 1-to-1 modal button fix */
+.rs-refModal button.rsRef-btn{
+  -webkit-appearance:none !important;
+  appearance:none !important;
+  cursor:pointer !important;
+  border:none !important;
+  border-radius:16px !important;
+  padding:12px 14px !important;
+  font-weight:700 !important;
+  font-size:13px !important;
+  transition:.18s ease !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:10px !important;
+  text-decoration:none !important;
+  line-height:1 !important;
+  white-space:nowrap !important;
+  font-family:"Segoe UI", Arial, Helvetica, sans-serif !important;
+}
+.rs-refModal button.rsRef-btn:disabled{
+  opacity:.55 !important;
+  cursor:not-allowed !important;
+  transform:none !important;
+  box-shadow:none !important;
+  filter:none !important;
+}
+.rs-refModal button.rsRef-btn--ghost{
+  background: rgba(17,24,39,.05) !important;
+  border:1px solid rgba(17,24,39,.10) !important;
+  color:#111827 !important;
+}
+.rs-refModal button.rsRef-btn--ghost:hover{
+  transform: translateY(-1px) !important;
+  box-shadow:0 14px 26px rgba(0,0,0,.10) !important;
+}
+.rs-refModal button.rsRef-btn--primary{
+  background-color: var(--rs-red) !important;
+  color:#fff !important;
+  border:1px solid rgba(207,32,48,.10) !important;
+  box-shadow: 0 14px 28px rgba(207,32,48,.18) !important;
+}
+.rs-refModal button.rsRef-btn--primary:hover{
+  filter:brightness(.98) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 18px 34px rgba(207,32,48,.22) !important;
+}
+
+@media (max-width: 520px){
+  .rs-refModal{ border-radius:20px; max-height: calc(100vh - 24px); }
+  .rs-refForm{ padding:14px; gap:12px; }
+  .rs-refBlock{ padding:12px; border-radius:16px; }
+  .rs-refGrid2{ grid-template-columns: 1fr; }
+  .rs-refFootBtns{ width:100%; }
+  .rs-refModal button.rsRef-btn{ width:100% !important; }
+}
+.rs-req11Overlay.is-open{
+  display:flex;
+  animation: rsFadeIn .18s ease;
+}
+@keyframes rsFadeIn{
+  from{ opacity:0; }
+  to{ opacity:1; }
+}
+
 </style>
 
 
@@ -2823,405 +2599,111 @@ if(meetingType === 'inperson'){
     });
 
   })();
-</script>
 
+// =========================================================
+// SHARE REFERRAL MODAL BEHAVIOR
+// =========================================================
+(function(){
+  const overlay = document.getElementById('rsRefOverlay');
+  const closeBtn = document.getElementById('rsRefClose');
+  const cancelBtn = document.getElementById('rsRefCancel');
+  const form = document.getElementById('rsRefForm');
 
-<!--end-->
+  const title = document.getElementById('rsRefTitle');
+  const sub = document.getElementById('rsRefSub');
+  const toMember = document.getElementById('rsRefToMember');
+  const toBiz = document.getElementById('rsRefToBiz');
 
+  if(!overlay || !form) return;
 
+  let lastFocus = null;
 
-<footer class="rs-footer" role="contentinfo">
-  <div class="rs-footer__inner">
+  function openModal(memberName, bizName){
+    lastFocus = document.activeElement;
 
-    <div class="rs-footer__grid">
+    overlay.classList.add('is-open');
+    overlay.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
 
-      <!-- Brand -->
-      <div class="rs-footer__brand">
-        <img
-          class="rs-footer__logo"
-          src="https://d34hmiuaex7c0.cloudfront.net/6568/uploads/cmaspages/gallery/galleryitem_1768573585550.515"
-          alt="BNI Rock Solid Referrals"
-        />
-        <p class="rs-footer__desc">
-          BNI Rock Solid Referrals is a structured network of trusted local professionals —
-          built on consistency, credibility, and referrals that convert.
-        </p>
-      </div>
+    const who = memberName ? `${memberName}${bizName ? ` — ${bizName}` : ''}` : 'Member';
+    title.textContent = `Share a referral with ${who}`;
+    sub.textContent = `Send a referral lead directly to ${memberName ? memberName.split(' ')[0] : 'this member'}.`;
 
-      <!-- Explore -->
-      <div class="rs-footer__col">
-        <h4>Explore</h4>
-        <a href="https://kakatbarilea-prog.github.io/bni-homepage/">Home</a>
-        <a href="https://kakatbarilea-prog.github.io/bni-chapter-leadership/">Chapter Leadership</a>
-        <a href="https://kakatbarilea-prog.github.io/bni-weekly-meetings">Weekly Meetings</a>
-        <a href="https://kakatbarilea-prog.github.io/bni-upcoming-events">Upcoming Events</a>
-        <a href="https://kakatbarilea-prog.github.io/bni-gallery">Gallery</a>
-        <a href="https://kakatbarilea-prog.github.io/bni-news">News</a>
-      </div>
+    toMember.value = memberName || '';
+    toBiz.value = bizName || '';
 
-      <!-- Members -->
-      <div class="rs-footer__col">
-        <h4>Members</h4>
-        <a href="https://kakatbarilea-prog.github.io/bni-member-login">Member Log-in</a>
-        <a href="https://kakatbarilea-prog.github.io/bni-chamber-members-directory/">Member Directory</a>
-        <a href="https://kakatbarilea-prog.github.io/bni-chamber-members-directory" class="rs-membersOnlyLink">Request a 1-to-1</a>
-        <a href="https://kakatbarilea-prog.github.io/bni-chamber-members-directory" class="rs-membersOnlyLink">Share a Referral</a>
+    // Reset fields
+    form.reset();
 
-        <!-- ✅ ADDED HERE per your request -->
-        <a href="https://kakatbarilea-prog.github.io/bni-member-events" class="rs-membersOnlyLink">Member Promotions &amp; Events</a>
-        <a href="https://kakatbarilea-prog.github.io/bni-post-an-event" class="rs-membersOnlyLink">Post an Event</a>
-
-        <a href="https://kakatbarilea-prog.github.io/bni-seek-of-the-week-page/" class="rs-membersOnlyLink">Submit Seek of the Week</a>
-        <a href="https://kakatbarilea-prog.github.io/bni-seek-of-the-week-submissions/" class="rs-membersOnlyLink">View Seeks of the Week</a>
-      </div>
-
-    </div>
-
-    <div class="rs-footer__bottom">
-      <div class="rs-footer__bottomLeft">
-        © <span id="rsFooterYear"></span> BNI Rock Solid Referrals&nbsp;&nbsp;•&nbsp;&nbsp;Powered by Segwik
-      </div>
-
-      <div class="rs-footer__bottomRight">
-        <a href="#">Privacy Policy</a>
-        <span class="rs-footer__sep">|</span>
-        <a href="#">Terms &amp; Conditions</a>
-      </div>
-    </div>
-
-  </div>
-</footer>
-
-<!-- MEMBERS ONLY POPUP (FOOTER VERSION) -->
-<div class="rsF-membersModal" id="rsFMembersModal" hidden aria-hidden="true">
-  <div class="rsF-membersModal__backdrop" data-close="1"></div>
-
-  <div class="rsF-membersModal__card" role="dialog" aria-modal="true" aria-label="Members only">
-    <div class="rsF-membersModal__badge">Members Only</div>
-    <div class="rsF-membersModal__title">This page is available to chapter members.</div>
-    <div class="rsF-membersModal__text">
-      Please log in to access member pages such as Seeks, Member Events, and Event Submissions.
-    </div>
-
-    <div class="rsF-membersModal__actions">
-      <button class="rsF-membersModal__btn rsF-membersModal__btn--secondary" type="button" data-close="1">
-        Close &amp; Continue
-      </button>
-      <a class="rsF-membersModal__btn rsF-membersModal__btn--primary" href="https://kakatbarilea-prog.github.io/bni-member-login" id="rsFModalLoginBtn">
-        Member Log-in
-      </a>
-    </div>
-  </div>
-</div>
-
-<style>
-  /* -------- FOOTER ONLY VARIABLES (scoped) -------- */
-  .rs-footer{
-    --rs-red:#CF2030;
-    --rs-bg:#333333;
-    --rs-text:#ffffff;
-    --rs-muted: rgba(255,255,255,.82);
-    --rs-line: rgba(255,255,255,.14);
+    // Focus first field
+    const first = document.getElementById('rsRefFirst');
+    if(first) first.focus();
   }
 
-  /* Scope all typography + box sizing to footer only */
-  .rs-footer, .rs-footer *{
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing:border-box;
+  function closeModal(){
+    overlay.classList.remove('is-open');
+    overlay.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+    if(lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
   }
 
-  .rs-footer{
-    width:100%;
-    background: var(--rs-bg);
-    color: var(--rs-text);
-    border-top: 4px solid var(--rs-red);
-  }
+  // Open listeners
+  document.addEventListener('click', function(e){
+    const btn = e.target.closest('.rs-shareRefBtn');
+    if(!btn) return;
 
-  .rs-footer__inner{
-    width:100%;
-    max-width:1200px;
-    margin:0 auto;
-    padding:42px 22px 18px;
-  }
+    e.preventDefault();
+    const memberName = btn.getAttribute('data-member') || '';
+    const bizName = btn.getAttribute('data-biz') || '';
+    openModal(memberName, bizName);
+  });
 
-  .rs-footer__grid{
-    display:grid;
-    grid-template-columns: 2.2fr 1fr 1fr;
-    gap:28px;
-    align-items:start;
-  }
+  // Close behaviors
+  if(closeBtn) closeBtn.addEventListener('click', closeModal);
+  if(cancelBtn) cancelBtn.addEventListener('click', closeModal);
 
-  .rs-footer__logo{
-    height:34px;
-    width:auto;
-    max-width:220px;
-    object-fit:contain;
-    display:block;
-  }
+  overlay.addEventListener('click', function(e){
+    if(e.target === overlay) closeModal();
+  });
 
-  .rs-footer__desc{
-    margin:12px 0 0;
-    font-weight:400;
-    font-size:14px;
-    line-height:1.6;
-    max-width:560px;
-    color: var(--rs-muted);
-  }
+  document.addEventListener('keydown', function(e){
+    if(!overlay.classList.contains('is-open')) return;
+    if(e.key === 'Escape') closeModal();
+  });
 
-  .rs-footer__col h4{
-    margin:0 0 12px;
-    font-size:13px;
-    font-weight:600;
-    letter-spacing:.06em;
-    text-transform:uppercase;
-    color:#fff;
-    position:relative;
-  }
-  .rs-footer__col h4::after{
-    content:"";
-    display:block;
-    width:42px;
-    height:2px;
-    border-radius:999px;
-    background: var(--rs-red);
-    margin-top:10px;
-    opacity:.95;
-  }
+  // Submit
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
 
-  .rs-footer__col a{
-    display:block;
-    width:max-content;
-    margin:10px 0;
-    font-weight:400;
-    font-size:14px;
-    color: var(--rs-muted);
-    text-decoration:none;
-    transition:.15s ease;
-  }
-  .rs-footer__col a:hover{
-    color:#fff;
-    text-decoration:underline;
-    text-underline-offset:3px;
-  }
+    // Required: first name + email only
+    const first = document.getElementById('rsRefFirst');
+    const email = document.getElementById('rsRefEmail');
 
-  .rs-footer__bottom{
-    margin-top:22px;
-    padding-top:14px;
-    border-top:1px solid var(--rs-line);
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:12px;
-    flex-wrap:wrap;
-    font-size:13px;
-    color: var(--rs-muted);
-  }
-
-  .rs-footer__bottomLeft{font-weight:400}
-
-  .rs-footer__bottomRight{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    font-weight:400;
-  }
-  .rs-footer__bottomRight a{
-    color: var(--rs-muted);
-    text-decoration:none;
-    transition:.15s ease;
-  }
-  .rs-footer__bottomRight a:hover{
-    color:#fff;
-    text-decoration:underline;
-    text-underline-offset:3px;
-  }
-  .rs-footer__sep{opacity:.5}
-
-  @media (max-width: 860px){
-    .rs-footer__grid{
-      grid-template-columns: 1fr 1fr;
+    if(!first || !String(first.value || '').trim()){
+      alert('Please enter the referral’s first name.');
+      if(first) first.focus();
+      return;
     }
-    .rs-footer__brand{
-      grid-column: 1 / -1;
-    }
-  }
-
-  @media (max-width: 520px){
-    .rs-footer__inner{
-      padding:34px 16px 14px;
+    if(!email || !String(email.value || '').trim()){
+      alert('Please enter the referral’s email.');
+      if(email) email.focus();
+      return;
     }
 
-    .rs-footer__grid{
-      grid-template-columns: 1fr;
-      gap:18px;
+    const sendBtn = document.getElementById('rsRefSend');
+    if(sendBtn){
+      const original = sendBtn.innerHTML;
+      sendBtn.disabled = true;
+      sendBtn.innerHTML = `<i class="fa-solid fa-check"></i> Referral sent`;
+      setTimeout(()=>{
+        sendBtn.disabled = false;
+        sendBtn.innerHTML = original;
+        closeModal();
+      }, 850);
+    }else{
+      closeModal();
     }
+  });
+})();
 
-    .rs-footer__col{
-      padding-top:10px;
-      border-top:1px solid rgba(255,255,255,.10);
-    }
-
-    .rs-footer__col a{
-      width:100%;
-      padding:10px 0;
-      margin:0;
-    }
-
-    .rs-footer__bottom{
-      flex-direction:column;
-      align-items:flex-start;
-      gap:8px;
-    }
-  }
-
-  /* =========================
-     FOOTER MODAL (unique classes)
-  ========================= */
-  .rsF-membersModal{
-    position:fixed;
-    inset:0;
-    z-index:5000;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:18px;
-  }
-  .rsF-membersModal[hidden]{display:none !important;}
-
-  .rsF-membersModal__backdrop{
-    position:absolute;
-    inset:0;
-    background: rgba(17,24,39,.62);
-    backdrop-filter: blur(4px);
-  }
-
-  .rsF-membersModal__card{
-    position:relative;
-    width:100%;
-    max-width:420px;
-    border-radius:20px;
-    border:1px solid rgba(229,231,235,.55);
-    background:#fff;
-    box-shadow: 0 22px 56px rgba(0,0,0,.22);
-    padding:18px 18px 16px;
-    text-align:left;
-  }
-
-  .rsF-membersModal__badge{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    padding:8px 12px;
-    border-radius:999px;
-    font-weight:900;
-    font-size:12px;
-    letter-spacing:.02em;
-    color:#CF2030;
-    background: rgba(207,32,48,.10);
-    border: 1px solid rgba(207,32,48,.18);
-    margin-bottom:12px;
-  }
-
-  .rsF-membersModal__title{
-    font-size:16px;
-    font-weight:900;
-    color:#111827;
-    margin-bottom:8px;
-  }
-
-  .rsF-membersModal__text{
-    font-size:14px;
-    line-height:1.6;
-    color:#4B5563;
-    margin-bottom:14px;
-  }
-
-  .rsF-membersModal__actions{
-    display:flex;
-    gap:10px;
-    flex-wrap:wrap;
-    margin-top:8px;
-  }
-
-  .rsF-membersModal__btn{
-    display:inline-flex !important;
-    align-items:center !important;
-    justify-content:center !important;
-    gap:8px !important;
-    padding:11px 14px !important;
-    border-radius:14px !important;
-    font-weight:900 !important;
-    font-size:13px !important;
-    text-decoration:none !important;
-    cursor:pointer !important;
-    border:1px solid #E5E7EB !important;
-    transition:.18s ease !important;
-    flex:1 !important;
-    min-width:160px !important;
-    line-height:1 !important;
-  }
-
-  .rsF-membersModal__btn--secondary{
-    background:#F3F4F6 !important;
-    color:#111827 !important;
-    border-color:#E5E7EB !important;
-  }
-
-  /* ✅ HARD FIX: anchor login button forced red + white */
-  .rsF-membersModal__btn--primary,
-  a.rsF-membersModal__btn--primary,
-  a#rsFModalLoginBtn{
-    background:#CF2030 !important;
-    color:#ffffff !important;
-    border-color:transparent !important;
-  }
-  .rsF-membersModal__btn--primary:hover,
-  a.rsF-membersModal__btn--primary:hover,
-  a#rsFModalLoginBtn:hover{
-    background:#b61b29 !important;
-    color:#ffffff !important;
-  }
-</style>
-
-<script>
-  document.getElementById("rsFooterYear").textContent = new Date().getFullYear();
-
-  // FOOTER MODAL GATING (self-contained)
-  (function(){
-    const modal = document.getElementById('rsFMembersModal');
-    if(!modal) return;
-
-    const modalLoginBtn = document.getElementById('rsFModalLoginBtn');
-    if(modalLoginBtn) modalLoginBtn.setAttribute('href', '#');
-
-    modal.setAttribute('hidden','');
-    modal.setAttribute('aria-hidden','true');
-
-    function openModal(){
-      modal.removeAttribute('hidden');
-      modal.setAttribute('aria-hidden','false');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeModal(){
-      modal.setAttribute('hidden','');
-      modal.setAttribute('aria-hidden','true');
-      document.body.style.overflow = '';
-    }
-
-    document.addEventListener('click', function(e){
-      const gated = e.target.closest('.rs-membersOnlyLink');
-      if(!gated) return;
-      e.preventDefault();
-      openModal();
-    });
-
-    modal.addEventListener('click', function(e){
-      if(e.target && e.target.getAttribute('data-close') === '1') closeModal();
-    });
-
-    document.addEventListener('keydown', function(e){
-      if(e.key === 'Escape' && !modal.hasAttribute('hidden')) closeModal();
-    });
-  })();
 </script>
